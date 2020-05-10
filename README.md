@@ -7,7 +7,8 @@ git push origin master
 
 ## To deploy a version
 ```
-git chekc
+git checkout gh-pages
+git mer master
 yarn run build
 git add -f build/cogniassist-docs/
 git commit -m "initial build"
