@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Cogniassist Help Center', // Title for your website.
+  tagline: 'DIY Virtual Asissts Platform',
   url: 'https://cogniwide.github.io', // Your website URL
   baseUrl: '/cogniassist-docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -48,14 +48,14 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/fav-icon.png',
+  footerIcon: 'img/fav-icon.png',
+  favicon: 'img/fav-icon.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#506817',
-    secondaryColor: '#384810',
+    primaryColor: '#000066',
+    secondaryColor: '#0000b3',
   },
 
   /* Custom fonts for website */
@@ -73,7 +73,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Cogniwide`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
