@@ -1,7 +1,7 @@
 {
   "docs": {
     "Project Management": ["doc1"],
-    "First Category": ["doc2"],
+    "First Category": ["knowledge-base"],
     "Second Category": ["doc3"]
   },
   "docs-other": {
