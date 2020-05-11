@@ -1,3 +1,12 @@
+## get latest changes
+```
+git pull origin master
+```
+## to see changes files
+```
+git status
+```
+
 ## After changes
 ```
 git add .
