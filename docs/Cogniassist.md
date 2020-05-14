@@ -27,6 +27,6 @@ You will be directed to a bot development platform in which you can create a new
 
 Click the **Create New Project** icon <img src="D:\Cogniassist\cogniassist-docs\website\static\img\CA_00.png" style="zoom: 33%;" />, a pop-up window will open for you to name your bot, specify its description and language settings.
 
-
+<img src="D:\Cogniassist\cogniassist-docs\website\static\img\CA_003.gif" style="zoom: 50%;" />
 
 ### Existing Bot Configuration
