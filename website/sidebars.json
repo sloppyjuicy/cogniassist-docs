@@ -1,9 +1,6 @@
 {
   "docs": {
-    "Getting Started": ["overview","getting-started"],
-    "Knowledge Base": ["knowledge-base"],
-    "Training": []
-  },
-  "docs-other": {
+    "Getting Started": ["introduction-to-cogniassist","getting-started"],
+    "Knowledge Base": ["knowledge-base"]
   }
 }
