@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'overview', label: 'Docs'},
+    {doc: 'introduction-to-cogniassist', label: 'Docs'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
