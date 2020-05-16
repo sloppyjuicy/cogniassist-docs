@@ -1,7 +1,7 @@
 ---
-id: cogni-assist 
-title: Introduction
-sidebar_label: Cogniassist
+id: overview
+title: Overview
+sidebar_label: Overview
 ---
 # Introduction
 
