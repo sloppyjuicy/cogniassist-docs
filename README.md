@@ -1,3 +1,12 @@
+## get latest changes
+```
+git pull origin master
+```
+## to see changes files
+```
+git status
+```
+
 ## After changes
 ```
 git add .
@@ -7,7 +16,8 @@ git push origin master
 
 ## To deploy a version
 ```
-git chekc
+git checkout gh-pages
+git mer master
 yarn run build
 git add -f build/cogniassist-docs/
 git commit -m "initial build"
