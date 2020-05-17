@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Creating Good Intents · Cogniassist Help Center</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## What is an Intent?"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Creating Good Intents · Cogniassist Help Center"/><meta property="og:type" content="website"/><meta property="og:url" content="https://cogniwide.github.io/cogniassist-docs/blog/2020/05/10/create-good-intents-version-1.0.0"/><meta property="og:description" content="## What is an Intent?"/><meta property="og:image" content="https://cogniwide.github.io/cogniassist-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://cogniwide.github.io/cogniassist-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/cogniassist-docs/img/fav-icon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://cogniwide.github.io/cogniassist-docs/blog/atom.xml" title="Cogniassist Help Center Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://cogniwide.github.io/cogniassist-docs/blog/feed.xml" title="Cogniassist Help Center Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/cogniassist-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/cogniassist-docs/css/main.css"/><script src="/cogniassist-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/cogniassist-docs/"><img class="logo" src="/cogniassist-docs/img/fav-icon.png" alt="Cogniassist Help Center"/><h2 class="headerTitleWithLogo">Cogniassist Help Center</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/cogniassist-docs/docs/overview" target="_self">Docs</a></li><li class=""><a href="/cogniassist-docs/help" target="_self">Help</a></li><li class="siteNavGroupActive"><a href="/cogniassist-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/cogniassist-docs/blog/2020/05/10/create-good-intents-version-1.0.0">Creating Good Intents</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/cogniassist-docs/blog/2020/05/10/create-good-intents-version-1.0.0">Creating Good Intents</a></h1><p class="post-meta">May 10, 2020</p><div class="authorBlock"><p class="post-authorName"><a target="_blank" rel="noreferrer noopener">Athul Anand</a></p></div></header><div><span><h2><a class="anchor" aria-hidden="true" id="what-is-an-intent"></a><a href="#what-is-an-intent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is an Intent?</h2>
+<p>An intent is the bot user's intention. It is used to understand what the user wants to do. Suppose you are building a  bot for banking domain, the users may
+want to check their account balance or find the nearest branch locator, these can be represented as intents like <strong>checkBalance</strong> or <strong>findBranch</strong> respectively.
+These intentions along with the other entities, and products extracted (which would give more context), will be used by the bot's inference engine or workflow engine
+to provide the user an appropriate response.</p>
+<p>Intent is the basic component of the bot, it can be used to trigger workflows, build intelligent FAQ's and the overall performance of the bot depends more on how
+you create your <strong>Intents</strong> and its <strong>Utterances</strong>.</p>
+<!--truncate-->
+<h2><a class="anchor" aria-hidden="true" id="how-to-define-intents"></a><a href="#how-to-define-intents" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to define Intents?</h2>
+<p>Defining good intents is the most important task in building your bot. There are two types of intents you can make in <strong>CogniAssist Platform</strong></p>
+<ul>
+<li><strong>Small Talk Intents</strong>: These intents are used to engage the users with common small talks, eg. queries likes &quot;Hello&quot;, &quot;How are you?&quot; etc.</li>
+<li><strong>Domain Intents</strong>: These are intents that are specific to the domain, eg. queries like &quot;What are the benefits of your Accounts&quot;, &quot;find the nearest branch&quot; etc.</li>
+</ul>
+<p>Some points to keep in mind while creating intents,</p>
+<h4><a class="anchor" aria-hidden="true" id="similar-intents"></a><a href="#similar-intents" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Similar Intents</h4>
+<p>While creating intents its always better to cluster similar intents. Creating duplicate intents will make the work harder to the bot builder and also reduce the
+confidence score of the underlying models. Suppose if you try to create intents like &quot;benefitsOfAccount&quot;, &quot;benefitsOfLoan&quot;, &quot;advantagesOfSavings&quot; where accounts,
+loans and savings are part of your product lines, this will create a lot of duplications in utterances as they all intend to know the benefit of some product. These
+can be simplified by specifying the products in the knowledge graph and defining a single intent eg: &quot;showBenefits&quot;, this will increase the confidence of model and
+also reduce data creation time. As the combination of intent and product can be used in the bot. Similarly in cases of entities.</p>
+<h2><a class="anchor" aria-hidden="true" id="choosing-a-featurizer"></a><a href="#choosing-a-featurizer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Choosing a Featurizer</h2>
+<p>Featurizers play a vital role in the task of intent recognition, it decides how the intent recognition should interpret the utterances. for example in a token based
+featurizer, the model will interpret the data in more of a morphological level, while a contextual embedding can capture more semantic meaning.</p>
+<p>CogniAssist deals with the following featurizers,</p>
+<h3><a class="anchor" aria-hidden="true" id="frequency-based"></a><a href="#frequency-based" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Frequency Based</h3>
+<p>Frequency based Featurizers analysis the in a morphological level, or token level. It gives importance to the words in utterances and its frequencies rather than the
+overall meaning of the sentence or word.</p>
+<p>Ideal for cases with lesser training data, and very narrow domain.</p>
+<h3><a class="anchor" aria-hidden="true" id="word-level"></a><a href="#word-level" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Word Level</h3>
+<p>This goes a step beyond the Frequency Level, by capturing the meaning of the words. for example &quot;benefits&quot; and &quot;advantages&quot; would be treated similarly.</p>
+<p>Ideal for low training data, and slightly broader domain</p>
+<h3><a class="anchor" aria-hidden="true" id="contextual-level"></a><a href="#contextual-level" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contextual Level</h3>
+<p>Contextual Featurizers are state of the art models that captures the sentence level meaning, it gives more semantic level understanding to the bot. Even though it
+requires more data than the other's it gives a more broader understanding which makes in favourable. They also provide multi-lingual support.</p>
+<p>Ideal for high availability of training data, broader domain, also in cases where multi-lingual data is present.</p>
+<h2><a class="anchor" aria-hidden="true" id="writing-utterances"></a><a href="#writing-utterances" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Writing Utterances</h2>
+<p>Now that you have an idea about creating the intents, now its time to add the utterances. Utterances are as important as intents, and writing good utterances,
+will improve the accuracy or level of understanding of the bot. How to write good utterances depends on which Featurizer you have selected, even though the platform
+have preprocessing in place so that most utterances will work. Writing specific utterances for featurizer would be more ideal.</p>
+<p>Some guidelines on how to write utterances for different featurizers,</p>
+<h3><a class="anchor" aria-hidden="true" id="frequency-level"></a><a href="#frequency-level" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Frequency Level</h3>
+<ul>
+<li>Add only the words that are relevant to the intent. eg. for knowing the benefits of a product, instead of &quot;I want to know the benefit of a product&quot; just use the
+relevant words maybe &quot;know benefits&quot;.</li>
+<li>Frequency level considers the frequencies of words, so avoid repetition of lower priority words, eg. utterances like &quot;get benefits&quot;, &quot;get advantages&quot;, &quot;get features&quot;.
+Even though the platform preprocess and identifies few of these cases, its better to avoid such repetitions.</li>
+<li>There is no minimum number of utterances, depends on the range of the words.</li>
+<li>No meaning would be captured so all synonyms, abbreviations etc. need to be added.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="word-level-1"></a><a href="#word-level-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Word Level</h3>
+<ul>
+<li>The guidelines of Frequency Level, are also applicable to Word Level, but it also considers the meaning of the words, so all
+synonyms need not be added, for eg. if &quot;get benefits&quot; is added &quot;get advantages&quot; might also be identified provided the other utterances doesn't contradict this.</li>
+<li>Minimum of 4-8 utterance per intent would be ideal.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="contextual-level-1"></a><a href="#contextual-level-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Contextual Level</h3>
+<ul>
+<li>On contrary to the previous guidelines, contextual level requires the utterance to be more complete sentences rather than just important words.
+These utterances are more like how the user will ask the questions.</li>
+<li>It needs to be a mix of complete and incomplete sentence, for eg. for knowing the benefits utterances likes &quot;what are its benefits&quot; as well as &quot;what are the benfits of the product&quot;
+is required. it is not required that it needs to be the same sentence, also it could be &quot;tell me about the benefits of the product&quot;. The point is it should be a
+both complete and incomplete sentences.</li>
+<li>Writing one word phrases only in an utterance, is only advisable when the only possible user interaction is one word.</li>
+<li>It is advisable to keep the utterances grammatically correct and avoiding spelling mistakes.</li>
+<li>It captures the meaning of the words, still a few of the synonyms can be added to utterance to get better accuracy. eg. &quot;what are its benefits&quot; and &quot;tell me about the advantages&quot;</li>
+<li>It is ideal not to use the same type of question and just replace the synonyms likes &quot;what are the benefits&quot; and &quot;what are the advantages&quot;. Instead phrase the
+utterances in different possible ways.</li>
+<li>Minimum of 8-10 utterances per intent is advisable, depending on the intents it may increase.</li>
+<li>In case of multi lingual utterances, the main language can have 8-10 utterance per intent, but slightly lesser data around 5-6 would be fine for other languages.</li>
+<li>These embeddings tries to draw a relation between multiple languages so even if trained in one language it can identify some grammatically similar languages.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="key-points-to-keep-in-mind"></a><a href="#key-points-to-keep-in-mind" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Key points to keep in mind</h3>
+<ul>
+<li><strong>Use of Abbreviations</strong>:
+It is better not to use abbreviations in the training data as it may not be able to capture its meaning. In cases of abbreviations it is advisable to define it
+in the dictionary rather than just adding in utterances. So the base words meaning can be captured correctly.</li>
+<li><strong>Use of special characters</strong>:
+Special characters need to be used only if they are relevant to the utterance. Using numbers or character just to complete the sentence is not advisable.</li>
+<li><strong>Spelling Mistake and Grammatical Errors</strong>
+Even though the platform have spell correctors in place to deal with minor spelling errors, it is always better to avoid it in utterances itself in order to avoid any
+confusions. Utterances are the supervised part of intent recognitions, avoiding errors in it grammatically(in case of Contextual featurizer) or spelling would
+make the intent recognition more accurate.</li>
+<li><strong>Semantic Variations</strong>:
+It is better to add semantically variant utterance than always reusing the same sentence and just changing a few words. It helps deal with semantic ambiguities
+which will improve the model performance.</li>
+<li><strong>Length of utterance</strong>:
+It depends on how the users will phrase the queries. Shorter phrases would do better in most cases. If the users always use longer phrases, you can add longer
+phrases.</li>
+<li><strong>Balanced Number of Utterance</strong>:
+It is important the all intents have a balanced number of utterances. If its less utterances or more, it needs to be balanced. In order avoid any biases in the models.</li>
+<li><strong>OOV or Domain Specific Words</strong>:
+Domain specific words like words which are only relevant to your domain, it would be better to add its meaning and synonyms in the dictionary. Else it will be triggered on
+exact matches only, or even get spell corrected.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="some-ways-to-deal-with-the-lack-of-training-data"></a><a href="#some-ways-to-deal-with-the-lack-of-training-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Some ways to deal with the lack of training data</h2>
+<p>While creating bots, adding the utterance is one of the major task, and coming up with different utterances sometimes be difficult.</p>
+<p>These are a few ways to help you with that,</p>
+<h3><a class="anchor" aria-hidden="true" id="assisted-utterances-suggestions"></a><a href="#assisted-utterances-suggestions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assisted utterances suggestions</h3>
+<p>During the utterance creation time the platform has the capability to suggest you utterances, which are similar to the utterance you added.
+In order for it to work better a complete sentence as a base utterance can help the model get more context and suggest you many possible utterances.</p>
+<h3><a class="anchor" aria-hidden="true" id="validate-failed-utterances"></a><a href="#validate-failed-utterances" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Validate Failed Utterances</h3>
+<p>All the queries which the bot couldn't identify or identified with a very low confidence would be logged as failed queries and you can validate it by specifying
+its corresponding intents. This will be added to the utterances and reflected in the bot next time.</p>
+<!---REF: https://help.clustaar.com/en/articles/2117627-how-to-create-good-intents-for-your-chatbot
+     https://blog.rasa.com/rasa-nlu-in-depth-part-1-intent-classification/
+     https://developer.kore.ai/docs/bots/chatbot-overview/nlp-guide/
+     https://blog.engati.com/intent-entity-business-chatbot/ -->
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/cogniassist-docs/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#what-is-an-intent">What is an Intent?</a></li><li><a href="#how-to-define-intents">How to define Intents?</a></li><li><a href="#choosing-a-featurizer">Choosing a Featurizer</a><ul class="toc-headings"><li><a href="#frequency-based">Frequency Based</a></li><li><a href="#word-level">Word Level</a></li><li><a href="#contextual-level">Contextual Level</a></li></ul></li><li><a href="#writing-utterances">Writing Utterances</a><ul class="toc-headings"><li><a href="#frequency-level">Frequency Level</a></li><li><a href="#word-level-1">Word Level</a></li><li><a href="#contextual-level-1">Contextual Level</a></li><li><a href="#key-points-to-keep-in-mind">Key points to keep in mind</a></li></ul></li><li><a href="#some-ways-to-deal-with-the-lack-of-training-data">Some ways to deal with the lack of training data</a><ul class="toc-headings"><li><a href="#assisted-utterances-suggestions">Assisted utterances suggestions</a></li><li><a href="#validate-failed-utterances">Validate Failed Utterances</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/cogniassist-docs/" class="nav-home"><img src="/cogniassist-docs/img/fav-icon.png" alt="Cogniassist Help Center" width="66" height="58"/></a><div><h5>Docs</h5><a href="/cogniassist-docs/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/cogniassist-docs/docs/en/doc2.html">Guides (or other categories)</a><a href="/cogniassist-docs/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/cogniassist-docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/cogniassist-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 Cogniwide</section></footer></div></body></html>
