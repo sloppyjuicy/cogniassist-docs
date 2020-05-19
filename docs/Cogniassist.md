@@ -23,15 +23,3 @@ Log in to the Cogniassist platform using the authorized email and password.
 
 You will be directed to a bot development platform in which you can create a new bot or look through the existing bots and its specifications.
 
-![](D:\Cogniassist\cogniassist-docs\website\static\img\CA_001.png)
-
-## Bot Configuration
-
-### New Bot Configuration
-
-Click the **Create New Project** icon <img src="D:\Cogniassist\cogniassist-docs\website\static\img\CA_00.png" style="zoom: 33%;" />, a pop-up window will open for you to name your bot, specify its description and language settings.
-
-<img src="D:\Cogniassist\cogniassist-docs\website\static\img\CA_003.gif" style="zoom: 50%;" />
-
-### Existing Bot Configuration
-
