@@ -1,14 +1,18 @@
+---
+id: cogni-assist 
+title: Introduction
+sidebar_label: Cogniassist
+---
+
 ## Project Dashboard
 
-Once you log on to the Cogniassist platform, it directs you to a project dashboard in which you can create a new bot or look through the existing bot configurations.
-
-<img src="assets/CA_001.png" style="zoom: 50%;" />
+Once you log on to the Cogniassist platform, it directs you to a project dashboard in which you can create a new bot or look through the existing bot configurations. <img src="assets\CA_001.png" style="zoom:50%;" />
 
 ***Note*** - The existing project displays the current status, deployed date and time and the instance details of the bot.
 
 | Project status                                               | Description                                                  |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| <img src="assets/CA_004.png?lastModify=1589564525" alt="img" style="zoom:50%;" /> | Bot is online                                                |
+| <img src="assets\CA_004.png" style="zoom:50%;" />            | Bot is online                                                |
 | <img src="assets/CA_005.png?lastModify=1589564525" alt="img" style="zoom:50%;" /> | Project is stopped                                           |
 | <img src="assets/CA_006.png?lastModify=1589564525" alt="img" style="zoom:50%;" /> | As soon as the project is created, the status will be **Not Available**. |
 
@@ -16,7 +20,7 @@ You can edit or delete the existing project using the settings icon <img src="as
 
 ### Create New Project
 
-Click the **Create New Project** icon <img src="assets/CA_00.png" style="zoom: 25%;" />, a pop-up window will open for you to name your bot, specify its description, language and user settings.
+Click the **Create New Project** icon <img src="assets/CA_00.png" style="zoom: 67%;" />, a pop-up window will open for you to name your bot, specify its description, language and user settings.
 
 #### Add Languages	
 
