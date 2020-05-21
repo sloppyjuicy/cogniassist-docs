@@ -1,16 +1,14 @@
 ---
-id: cogni-assist 
-title: Introduction
-sidebar_label: Cogniassist
+id: smalltalk
+title: Smalltalk
+sidebar_label: Smalltalk
 ---
-
-## Smalltalk
 
 Small talks make your bot conversation natural with the customer. It includes greetings, acknowledgements and off-topic chats, which gives the feel of an actual conversation.
 
 ***Note*** - As soon as you create a project, a set of pre-defined small talks are available, which has its default response.
 
-Select **Smalltalk** <img src="D:\Cogniassist\cogniassist-docs\docs\assets\CA_017.png" style="zoom: 67%;" />under the **Knowledge** module, it directs you to **Smalltalk** screen as shown below.
+Select **Smalltalk** <img src="assets\CA_017.png" style="zoom: 67%;" />under the **Knowledge** module, it directs you to **Smalltalk** screen as shown below.
 
 ![](assets\CA_016.png)
 

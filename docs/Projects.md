@@ -1,7 +1,7 @@
 ---
-id: cogni-assist 
-title: Introduction
-sidebar_label: Cogniassist
+id: projects
+title: Projects
+sidebar_label: Projects
 ---
 
 ## Project Dashboard

@@ -1,10 +1,8 @@
 ---
-id: cogni-assist 
-title: Introduction
-sidebar_label: Cogniassist
+id: faq
+title: FAQ
+sidebar_label: FAQ
 ---
-
-## FAQs
 
 You can provide higher customer satisfaction by answering some commonly asked questions. Here, you can map the frequently asked questions to each product. This platform allows you to create new FAQs, use preexisting FAQs or import the FAQs by directly uploading .csv files which has the question and answers.
 
@@ -16,7 +14,7 @@ You can provide higher customer satisfaction by answering some commonly asked qu
 
 - Your customers can simply enter their queries in the bot, and the bot answers instantly 
 
-Select **FAQs** <img src="D:\Cogniassist\cogniassist-docs\docs\assets\CA_019.png" style="zoom:67%;" />under the **Knowledge** module, it directs you to **FAQ** as shown below.  ![](assets\CA_011.png) 
+Select **FAQs** <img src="assets\CA_019.png" style="zoom:67%;" />under the **Knowledge** module, it directs you to **FAQ** as shown below.  ![](assets\CA_011.png) 
 
 ### Add FAQ
 
