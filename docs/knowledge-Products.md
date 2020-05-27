@@ -4,7 +4,7 @@ title: Products
 sidebar_label: Products
 ---
 
-Select **Products** <img src="assets\CA_018.png" style="zoom:67%;" />under the **Knowledge** module to define knowledge on your key domain terms such as business, products and services. It directs you to the below screen.
+Select **Products** <img src="assets\CA_018.png" style="zoom:67%;" />under the **Knowledge** module to define knowledge on your key domain terms such as business, products and services. It directs you to the **Products** screen.
 
 <img src="assets\CA_008.png" style="zoom:50%;" />
 

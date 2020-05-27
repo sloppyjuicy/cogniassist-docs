@@ -14,7 +14,7 @@ You can provide higher customer satisfaction by answering some commonly asked qu
 
 - Your customers can simply enter their queries in the bot, and the bot answers instantly 
 
-Select **FAQs** <img src="assets\CA_019.png" style="zoom:67%;" />under the **Knowledge** module, it directs you to **FAQ** as shown below.  ![](assets\CA_011.png) 
+Select **FAQs** <img src="assets\CA_019.png" style="zoom:67%;" />under the **Knowledge** module, it directs you to the **FAQ** screen as shown below.  ![](assets\CA_011.png) 
 
 ### Add FAQ
 

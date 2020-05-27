@@ -8,7 +8,7 @@ Small talks make your bot conversation natural with the customer. It includes gr
 
 ***Note*** - As soon as you create a project, a set of pre-defined small talks are available, which has its default response.
 
-Select **Smalltalk** <img src="assets\CA_017.png" style="zoom: 67%;" />under the **Knowledge** module, it directs you to **Smalltalk** screen as shown below.
+Select **Smalltalk** <img src="assets\CA_017.png" style="zoom: 67%;" />under the **Knowledge** module, it directs you to the **Smalltalk** screen as shown below.
 
 ![](assets\CA_016.png)
 
@@ -16,7 +16,7 @@ Select **Smalltalk** <img src="assets\CA_017.png" style="zoom: 67%;" />under the
 
 You can use any of the below methods to add small talks. 
 
-Click the **Upload** icon <img src="assets\CA_013.png" style="zoom:50%;" />and directly upload the file which contains the small talk intents and responses or provide the required details as shown below.
+Click the **Upload** icon <img src="assets\CA_013.png" style="zoom:50%;" />and directly upload the file which contains the small talk intents and responses or provide the required details as shown below.	
 
 ![](assets\cw_008.gif)
 
