@@ -8,11 +8,11 @@ Select **Products** <img src="assets\CA_018.png" style="zoom:67%;" />under the *
 
 <img src="assets\CA_008.png" style="zoom:50%;" />
 
-Here you can define the structure of your products.
+Here you can define the hierarchy of your products.
 
 ### Add product
 
-To form a product hierarchy, add a parent product and continue adding its sub products. 
+To form a product hierarchy, add a parent product and continue adding its sub-products. 
 
 <img src="assets\cw_010.gif" style="zoom:50%;" />
 
@@ -23,7 +23,7 @@ Click the **Upload** icon <img src="assets\CA_013.png" style="zoom:50%;" />and d
 | Option         | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | Name           | Enter the name of the product. Example, bill payment.        |
-| Language       | Select the language from the list. It lists the primary and secondary languages. |
+| Language       | Select the language from the list. It lists the primary and secondary languages. Example, English |
 | Description    | Describe your product. Example, you can pay your electricity, gas, phone or other bills through digital banking. |
 | Add and Cancel | Click **Add** to add the product to the hierarchy, else click **Cancel** |
 
@@ -36,7 +36,7 @@ Once you define the product details, click **Add** to add the product to the pro
 
 ### Add sub-product
 
-You can add multiple sub-products under a parent product.
+You can add multiple sub-products under a parent product. Once you select a product, click the respective check boxes of the sub-products. The selected sub-products are automatically saved to the product list.
 
 <img src="assets\cw_011.gif" style="zoom:50%;" />
 

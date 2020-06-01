@@ -32,9 +32,9 @@ Once you enter a new intent name, click the **Add** icon <img src="D:\Cogniassis
 
 ### Add Utterances
 
-Once you add a new intent, you can retrieve an extensive library of built-in utterances instead of creating on your own or you can add your own custom utterances.
+Once you add a new intent, you can retrieve an extensive library of utterances instead of creating on your own or you can add your own custom utterances.
 
-To retrieve the built-in utterances, click the **Augment Training Data** icon <img src="D:\Cogniassist\cogniassist-docs\docs\assets\CA_025png.png" style="zoom:50%;" />. You can select the required utterances from the list as shown below. 
+To retrieve the utterances generated for the user query, click the **Augment Training Data** icon <img src="D:\Cogniassist\cogniassist-docs\docs\assets\CA_025png.png" style="zoom:50%;" />. You can select the required utterances from the list as shown below. 
 
 <img src="D:\Cogniassist\cogniassist-docs\docs\assets\cw_014.gif" style="zoom:67%;" />
 

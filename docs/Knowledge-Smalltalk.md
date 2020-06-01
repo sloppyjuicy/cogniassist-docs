@@ -35,7 +35,7 @@ You can add intents and edit the responses in the **Default** section. Check the
 
 2. Fallback - If the bot cannot find an appropriate response to the user's query, the bot provides a fallback response. Example, if the user asks "What is the latest news today?", the bot replies "Please ask a different question" as the intent is inappropriate to the bot.
 
-![](assets\cw_0122.gif)
+<img src="assets\cw_0122.gif" style="zoom: 67%;" />
 
 #### **Custom Smalltalk**
 

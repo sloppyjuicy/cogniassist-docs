@@ -4,7 +4,7 @@ title: FAQ
 sidebar_label: FAQ
 ---
 
-You can provide higher customer satisfaction by answering some commonly asked questions. Here, you can map the frequently asked questions to each product. This platform allows you to create new FAQs, use preexisting FAQs or import the FAQs by directly uploading .csv files which has the question and answers.
+You can provide higher customer satisfaction by answering some commonly asked questions. Here, you can map the frequently asked questions to each product. This platform allows you to create new FAQs, use preexisting FAQs or import the FAQs by directly uploading .csv files which has the frequently asked question and answers.
 
 ***Note*** - 
 
@@ -12,7 +12,7 @@ You can provide higher customer satisfaction by answering some commonly asked qu
 
 [Intents]: https://cogniwide.github.io/cogniassist-docs/blog/2020/05/10/create-good-intents-version-1.0.0
 
-- Your customers can simply enter their queries in the bot, and the bot answers instantly 
+- This helps your bot to answer instantly to your customer queries.
 
 Select **FAQs** <img src="assets\CA_019.png" style="zoom:67%;" />under the **Knowledge** module, it directs you to the **FAQ** screen as shown below.  ![](assets\CA_011.png) 
 

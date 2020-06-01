@@ -4,7 +4,7 @@ sidebar_label: Smalltalk
 
 ## Entities
 
-Entities are knowledge repositories, which are used to provide more accurate responses for the user's intent. The entities improve the way AI bot finds the possible matches with the slot values in a user's utterance with your custom slot values. It is a keyword which is extracted from a sentence. Example, location, date, person, etc. when a user makes a request, the AI bot attempts to match the possible slot values in the utterance with the custom values and synonyms in the entities.
+An entity represents a key term or object that is relevant to your intents, which provides a specific context for an intent. Example, location, date, person, etc. when a user makes a request, the AI bot attempts to match the possible slot values in the utterance with the custom values and synonyms in the entities.
 
 You can also create custom entities based on your bot's context. Select **Entities** <img src="D:\Cogniassist\cogniassist-docs\docs\assets\CA_027.png" style="zoom:50%;" /> under the **Training** module, it directs you to the **Custom Entities** screen.
 
