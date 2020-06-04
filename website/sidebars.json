@@ -1,9 +1,10 @@
 {
   "docs": {
-    "Getting Started": ["introduction-to-cogniassist","getting-started","projects"],
+    "Getting Started": ["introduction-to-cogniassist","login","projects"],
     "Knowledge Base": ["knowledge-base","products","faq","smalltalk"],
-    "Workflows":[],
-    "Training":[],
-    "Deploy":[]
+    "Workflows":["workflow"],
+    "Train":["utterances","entities","product-synonyms","re-training"],
+    "Deploy":["settings","deployments","ui-builder","analytics"]
+
   }
 }
