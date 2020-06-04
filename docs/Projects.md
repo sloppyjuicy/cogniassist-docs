@@ -4,8 +4,6 @@ title: Projects
 sidebar_label: Projects
 ---
 
-## Project Dashboard
-
 Once you log on to the Cogniassist platform, it directs you to a project dashboard in which you can create a new bot or look through the existing bot configurations. <img src="assets\CA_001.png" style="zoom:50%;" />
 
 ***Note*** - The existing project displays the current status, deployed date and time and the instance details of the bot.

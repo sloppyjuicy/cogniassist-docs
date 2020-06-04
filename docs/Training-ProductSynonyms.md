@@ -1,8 +1,8 @@
-id: smalltalk
-title: Smalltalk
-sidebar_label: Smalltalk
-
-### Product Synonyms
+---
+id: product-synonyms
+title: Product Synonyms
+sidebar_label: Product Synonyms
+---
 
 When you design a bot, they should have three parts:
 
@@ -16,8 +16,8 @@ In our pizza example, your bot would identify the statement as a #place_order in
 
 **Ultimately, slots let your bot filter what types of answers will match your user’s intent and subsequently choose the correct response.**
 
-You can provide different types of abbreviations for your domain terms or key products in this section. Select **Product Synonyms** <img src="D:\Cogniassist\cogniassist-docs\docs\assets\CA_030.png" style="zoom:50%;" /> under the **Training** module, it directs you to the **Domain Dictionary** screen.
+You can provide different types of abbreviations for your domain terms or key products in this section. Select **Product Synonyms** <img src="assets\CA_030.png" style="zoom:50%;" /> under the **Training** module, it directs you to the **Domain Dictionary** screen.
 
-![](D:\Cogniassist\cogniassist-docs\docs\assets\cw_018.gif)
+![](assets\cw_018.gif)
 
 Adding variation of abbreviations to a keyword helps the AI bot to develop personalized responses. Example, if the user says "I want to send money to John" and if the AI bot is already trained to identify a person's name from the user's query, the AI bot provides a personalized response.

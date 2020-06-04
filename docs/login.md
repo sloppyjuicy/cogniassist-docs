@@ -1,11 +1,8 @@
 ---
-id: getting-started  
-title: Getting Started
-sidebar_label: Getting Started
+id: login
+title: Login
+sidebar_label: Login
 ---
-
-
-## Login
 
 This is a walkthrough to see the basics of the CogniAssist platform which provides the required components to develop and manage intelligent bots throughout their life cycle.
 
