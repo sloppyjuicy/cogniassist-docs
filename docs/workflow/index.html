@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Workflow · Cogniassist Help Center</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="A chatbot workflow begins with a welcome message, proceeds to an initial question, presents specific answers, allows the user to respond, extracts the required information, and then displays a message that ends the conversation."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Workflow · Cogniassist Help Center"/><meta property="og:type" content="website"/><meta property="og:url" content="https://cogniwide.github.io/cogniassist-docs/"/><meta property="og:description" content="A chatbot workflow begins with a welcome message, proceeds to an initial question, presents specific answers, allows the user to respond, extracts the required information, and then displays a message that ends the conversation."/><meta property="og:image" content="https://cogniwide.github.io/cogniassist-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://cogniwide.github.io/cogniassist-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/cogniassist-docs/img/fav-icon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://cogniwide.github.io/cogniassist-docs/blog/atom.xml" title="Cogniassist Help Center Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://cogniwide.github.io/cogniassist-docs/blog/feed.xml" title="Cogniassist Help Center Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/cogniassist-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/cogniassist-docs/css/main.css"/><script src="/cogniassist-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/cogniassist-docs/"><img class="logo" src="/cogniassist-docs/img/fav-icon.png" alt="Cogniassist Help Center"/><h2 class="headerTitleWithLogo">Cogniassist Help Center</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/cogniassist-docs/docs/introduction-to-cogniassist" target="_self">Docs</a></li><li class=""><a href="/cogniassist-docs/help" target="_self">Help</a></li><li class=""><a href="/cogniassist-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Workflows</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/introduction-to-cogniassist">Introduction</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/login">Login</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/projects">Projects</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Knowledge Base</h3><ul class=""><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/knowledge-base">Knowledge Base</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/products">Products</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/faq">FAQ</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/smalltalk">Smalltalk</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Workflows</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/cogniassist-docs/docs/workflow">Workflow</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Train</h3><ul class=""><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/utterances">Intent &amp; Utterances</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/entities">Entities</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/product-synonyms">Product Synonyms</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/re-training">Re-Training</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Deploy</h3><ul class=""><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/settings">settings</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/deployments">deployments</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/ui-builder">ui-builder</a></li><li class="navListItem"><a class="navItem" href="/cogniassist-docs/docs/analytics">analytics</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Workflow</h1></header><article><div><span><p>A chatbot workflow begins with a welcome message, proceeds to an initial question, presents specific answers, allows the user to respond, extracts the required information, and then displays a message that ends the conversation.</p>
+<p>This topic explains the steps for creating a conversational flow between a user and a bot using the Workflow Builder tool in the CogniAssist bot Builder platform.</p>
+<p>Select <strong>Workflows</strong> <img src="assets\CA_032.png" style="zoom:50%;" />, it directs you to the <strong>Workflows</strong> screen.</p>
+<p><img src="assets\CA_033.png" style="zoom:50%;" /></p>
+<p>This platform allows you to create a new workflow and modify the existing workflows.</p>
+<h3><a class="anchor" aria-hidden="true" id="create-new-workflow"></a><a href="#create-new-workflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create New Workflow</h3>
+<p>Click the <strong>+ New Workflow</strong> icon <img src="assets\CA_034.png" style="zoom: 67%;" /> to create a new workflow for your AI bot. The <strong>Add New Workflow</strong> pop-up screen will open for you to define the workflow settings.</p>
+<p><img src="assets\CA_036.png" style="zoom:60%;" /></p>
+<p>Provide the required details in the below field to create a new workflow.</p>
+<table>
+<thead>
+<tr><th>Option</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Title</td><td>Provide a title for your new workflow. Example, Bill payment.</td></tr>
+<tr><td>Exported workflow</td><td>Click the <strong>Choose File</strong> icon to import the workflows, which is already exported from the same project or from a different project.</td></tr>
+<tr><td>Flow Resume</td><td>Select the <strong>Flow Resume</strong> check box, if you want to backtrack the history and resume to the previously entered interactions to help you control the AI bot's conversation flow.</td></tr>
+<tr><td>Enabled</td><td>Select the <strong>Enabled</strong> check box to activate the workflow. This check box is editable only if the initial version of the workflow is ready.</td></tr>
+</tbody>
+</table>
+<p>Once you provide the required details, click <strong>Create Workflow</strong>. It creates a new workflow. You can modify, download and delete the workflow as shown below.</p>
+<p><img src="assets\cw_020.gif" alt=""></p>
+<p>Click on the required workflow title, it directs you to the workflow builder as shown below.</p>
+<p><img src="assets\CA_037.png" style="zoom: 67%;" /></p>
+<h3><a class="anchor" aria-hidden="true" id="chatbot-actions"></a><a href="#chatbot-actions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Chatbot Actions</h3>
+<p><strong>Welcome Messages</strong></p>
+<p>The welcome message is the starting point for all AI bot workflows and it starts the conversation automatically with the user. Example, Welcome back! How may I help you today?</p>
+<p><strong>Questions</strong></p>
+<p>After greeting the user, the AI bot will ask a question to find out the user intention. Example, Please let me know if you have any questions on our product.</p>
+<p><strong>Outputs</strong></p>
+<p>Once the chatbot asks a question, it will display several multiple-choice options. Each option leads to a unique set of responses and information gathering. Example, Select the topic from the options - send money, transaction status, insurance.</p>
+<p><strong>Responses</strong></p>
+<p>After the user selects an option from the list, the AI bot will respond with a confirmation message. You can create your own customized responses. Example, I can help you with that. Please provide your transaction ID.</p>
+<p><strong>End Messages</strong></p>
+<p>Once the AI bot receives the information from the user, it will display an end message. Example, Click OK to know the transaction status.</p>
+<h3><a class="anchor" aria-hidden="true" id="configuring-workflows"></a><a href="#configuring-workflows" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuring Workflows</h3>
+<p>By default, it displays the <strong>start</strong> workflow step. Click on the <strong>start</strong> workflow to begin with the workflow configuration. Once you click <strong>start</strong>, it displays the below pop-up screen.</p>
+<p><img src="assets\CA_038.png" style="zoom: 67%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="trigger-intents"></a><a href="#trigger-intents" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Trigger Intents</h4>
+<p>Adding an intent is the first step to start a workflow. You can fetch the pre-defined intents in this section to trigger the particular action. Type the intent name in the <strong>Trigger Intents</strong> field and select the intent from the list.</p>
+<p>If the user query matches the particular intent, it triggers the bot response.  A sample trigger is shown below.</p>
+<p><img src="assets\cw_021.gif" style="zoom: 80%;" /></p>
+<p><strong><em>Note</em></strong> -  If you want to add a new intent, then select <strong>Utterances</strong> under the <strong>Training</strong> module and add the new intent. After adding the new intent, you can retrieve the same here.</p>
+<h4><a class="anchor" aria-hidden="true" id="output-ports"></a><a href="#output-ports" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Output Ports</h4>
+<p>The <strong>start</strong> workflow has a single output port by default. You can connect to the next node of the workflow using the output port. A node is used to gather or show information from or to the user.</p>
+<h3><a class="anchor" aria-hidden="true" id="add-new-workflow-step"></a><a href="#add-new-workflow-step" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Add new workflow step</h3>
+<p>Click the <strong>+New Workflow Step</strong> icon <img src="assets\CA_039.png" style="zoom:60%;" /> to add a new workflow step. It displays the below list of options.</p>
+<ol>
+<li>User Interaction</li>
+<li>Logic Step</li>
+<li>API Call</li>
+<li>Send E-Mail</li>
+<li>S3 File Upload</li>
+<li>REST File Upload</li>
+</ol>
+<h4><a class="anchor" aria-hidden="true" id="user-interaction"></a><a href="#user-interaction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User Interaction</h4>
+<p>Once the user triggers a particular intent, the bot should provide a relevant response to the user. You can customize the bot responses here. Select <strong>User Interaction</strong> from the list, it displays the screen as shown below.</p>
+<p><img src="assets\CA_040.png" style="zoom: 67%;" /></p>
+<p>It displays the user interaction screen with the below options.</p>
+<ol>
+<li>Responses</li>
+<li>Slots</li>
+<li>Code</li>
+<li>Output Ports</li>
+</ol>
+<h5><a class="anchor" aria-hidden="true" id="responses"></a><a href="#responses" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Responses</h5>
+<ul>
+<li>To add a bot's response to the user, click the <strong>+Add Response</strong> icon <img src="assets\CA_041.png" style="zoom:60%;" />under <strong>Responses</strong>. It displays the <strong>Responses</strong> tab as shown below.</li>
+</ul>
+<p><img src="assets\CA_042.png" style="zoom: 67%;" /></p>
+<ul>
+<li>Enter the relevant bot response in the above text box.</li>
+</ul>
+<p><img src="assets\CA_043.png" alt=""></p>
+<ul>
+<li>If you want to add multi-line response,  click  the <strong>+Add Response</strong> icon <img src="assets\CA_041.png" style="zoom:60%;" /> to add another response to the user.</li>
+</ul>
+<p><img src="assets\cw_022.gif" alt=""></p>
+<p>Click the <strong>Add</strong> icon <img src="assets\CA_054.png" style="zoom:60%;" />to customize the response. It displays the below options.</p>
+<p><img src="assets\CA_055.png" style="zoom:60%;" /></p>
+<h6><a class="anchor" aria-hidden="true" id="buttons"></a><a href="#buttons" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Buttons</h6>
+<p>Buttons provide a defined set of options, which enables the user to select the options in a convenient way. It helps the bot platform to find and answer the user query with high accuracy.</p>
+<p>Click <strong>Buttons</strong>, it displays the screen as shown below.</p>
+<p><img src="assets\cw_025.gif" style="zoom:50%;" /></p>
+<p><strong>Payload</strong> -</p>
+<ul>
+<li>You can provide a button title for the user's convenience. When the user clicks the button, the payload value is processed in the back end. For example, the button title is defined as &quot;<strong>Yes, please</strong>&quot; and the payload value is defined as <strong>yes</strong>. when the user clicks the <strong>&quot;Yes, please&quot;</strong> button, the payload value <strong>yes</strong> is processed in the back end to maintain simple logic process.</li>
+<li>You can also trigger an intent in the payload field. You have to provide the intent name in the format <strong>/default/intention</strong>. Example, /default/affirm.</li>
+</ul>
+<p><strong>Quick Replies</strong></p>
+<p>Chatbot offer users, a simple way to reply to a message through quick replies. The user can reply to the bot in just one click, instead of typing it. Quick replies are optional.</p>
+<ul>
+<li>Click the <strong>+</strong> icon <img src="assets\CA_045.png" style="zoom:60%;" /> to add quick replies.</li>
+</ul>
+<p><img src="assets\CA_048.png" style="zoom:67%;" /></p>
+<h5><a class="anchor" aria-hidden="true" id="slots"></a><a href="#slots" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Slots</h5>
+<p>Slots are the variables which enable your AI bot to categorize and interpret the users’ query. If the user says, “I want to pay bills,” your bot first has to understand that the user is requesting for a bill payment activity. Next, it finds the slots in the user query to to find out what kind of suggestion it should give.</p>
+<p>Ultimately, slots let your bot to find the appropriate matching answers to your user’s intent and relevantly responds.</p>
+<p>Example, your bot would identify the statement as a #pay_bills intent with a @payment_type slot and a “credit card” value. From there, your bot can proceed with the credit card payment and then provides a relevant response to the user.</p>
+<ul>
+<li>To define the slot settings, click the <strong>Slots</strong> tab. It displays the screen as shown below.</li>
+</ul>
+<p><img src="assets\CA_044.png" style="zoom:50%;" /></p>
+<p><strong>Slots</strong></p>
+<ul>
+<li>Click the <strong>+</strong> icon <img src="assets\CA_045.png" style="zoom:67%;" /> to add a slot.</li>
+</ul>
+<p><img src="assets\cw_023.gif" style="zoom:67%;" /></p>
+<ul>
+<li>You can provide the below details to define the slot settings.</li>
+</ul>
+<table>
+<thead>
+<tr><th>Option</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Required</td><td>Select the Required check box, if you want to keep the slot information as mandatory. Example, the slot name is given as <strong>bankname</strong>. So, the bot proceeds further only if the user provides the bank name.</td></tr>
+<tr><td>Name</td><td>Enter the slot name. Example, bankname. The slot names should not contain space.</td></tr>
+<tr><td>Entity</td><td>Select the entity name from the list. The list displays the custom and default entity types.</td></tr>
+<tr><td>Is List</td><td>Select the <strong>Is List</strong> check box to accept the user's response in a list form. Example, if the bot asks the user to provide the mobile number, and the user provides 2 mobile numbers, the bot will accept both the values. If the <strong>Is List</strong> check box is not selected, the bot accepts only the first mobile number.</td></tr>
+<tr><td>Persist</td><td>Select the <strong>Persist</strong> check box to save the slot information in the bot's memory, which can be used later when the user asks the same query.</td></tr>
+</tbody>
+</table>
+<p><strong>Fallback Response</strong></p>
+<p>If the user invalidly responds, the bot has to provide a fallback response.</p>
+<ul>
+<li>Click the <strong>+</strong> icon <img src="assets\CA_045.png" style="zoom:67%;" /> and add a fallback response.</li>
+</ul>
+<p><img src="assets\CA_046.png" style="zoom:67%;" /></p>
+<p><strong><em>Note</em></strong> - If you didn't define the fallback response, the bot displays the default fallback message &quot;invalid response&quot;.</p>
+<h5><a class="anchor" aria-hidden="true" id="code"></a><a href="#code" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Code</h5>
+<p>You can define code related details in this section.</p>
+<ul>
+<li>Click the <strong>Code</strong> tab and it displays the screen as shown below.</li>
+</ul>
+<p><img src="assets\CA_047.png" style="zoom: 50%;" /></p>
+<h5><a class="anchor" aria-hidden="true" id="output-ports-1"></a><a href="#output-ports-1" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Output Ports</h5>
+<p>You can connect the output port to an input port of a different node.</p>
+<ul>
+<li>To define the output port settings, click the <strong>Output</strong> tab, it displays the screen as shown below.</li>
+</ul>
+<p><img src="assets\CA_049.png" style="zoom:67%;" /></p>
+<ul>
+<li>You should provide the below to define the output settings.</li>
+</ul>
+<table>
+<thead>
+<tr><th>Option</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>Port name</td><td>Enter a port name.</td></tr>
+<tr><td>Condition</td><td>Enter the condition to validate the user input. Example, if the condition is given as <strong>text == &quot;India&quot;</strong>, it validates the value <strong>India</strong> with the user input to proceed further.</td></tr>
+</tbody>
+</table>
+<h4><a class="anchor" aria-hidden="true" id="logic-step"></a><a href="#logic-step" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Logic Step</h4>
+<p>You can execute programs and add a logic step after a node using this option. select Logic Step from the list, it displays the screen as shown below.</p>
+<p><img src="assets\CA_051.png" style="zoom:60%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="api-call"></a><a href="#api-call" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API Call</h4>
+<p>You can access the data or functionality of another application from your bot building platform using the API call option. Select <strong>API Call</strong> from the list, it displays the screen as shown below.</p>
+<p><img src="assets\CA_052.png" style="zoom:60%;" /></p>
+<h4><a class="anchor" aria-hidden="true" id="send-e-mail"></a><a href="#send-e-mail" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Send E-Mail</h4>
+<p>Select <strong>Send E-mail</strong> from the list, it displays the screen as shown below. You can add an e-mail workflow. When this action is triggered, an email is sent to the recipients with the slot values such as transaction status, date, country name, etc.</p>
+<p><img src="assets\CA_050.png" style="zoom:60%;" /></p>
+<table>
+<thead>
+<tr><th>Option</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>recepients (,)</td><td>Enter the recipients email ID. Each email ID should be separated by a comma.</td></tr>
+<tr><td>Subject</td><td>Enter the subject. Example, transaction status</td></tr>
+<tr><td>email body</td><td>Enter the information which is useful to the user. Example, Name, country, etc.</td></tr>
+</tbody>
+</table>
+<p><strong><em>Note</em></strong> - You can retrieve the slot values using the below format <strong>{slot_values}</strong>. Type a slot name inside the braces {} to retrieve its value. Example, {country}. It will automatically retrieve the country name of the user in the email body.</p>
+<h4><a class="anchor" aria-hidden="true" id="s3-file-upload"></a><a href="#s3-file-upload" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>S3 File Upload</h4>
+<p><em>for future purpose</em></p>
+<h4><a class="anchor" aria-hidden="true" id="rest-file-upload"></a><a href="#rest-file-upload" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>REST File Upload</h4>
+<p><em>for future purpose</em></p>
+<p>To end the workflow step, select the <strong>End Step</strong> check box <img src="assets\CA_056.png" style="zoom:60%;" />and save the workflow.</p>
+<p>Once you define conversational workflow, click the <strong>Save</strong> icon to save the workflow. You can check the below basic workflow of a bill payment activity.</p>
+<p><img src="assets\CA_053.png" alt=""></p>
+<p>Select <strong>Enabled</strong> check box in the <strong>Edit</strong> Workflow pop-up to activate the workflow.</p>
+<p><img src="assets\cw_024.gif" alt=""></p>
+<p>Once the conversational workflow is complete, you can deploy the AI bot.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/cogniassist-docs/docs/smalltalk"><span class="arrow-prev">← </span><span>Smalltalk</span></a><a class="docs-next button" href="/cogniassist-docs/docs/utterances"><span>Intent &amp; Utterances</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/cogniassist-docs/" class="nav-home"><img src="/cogniassist-docs/img/fav-icon.png" alt="Cogniassist Help Center" width="66" height="58"/></a><div><h5>Docs</h5><a href="/cogniassist-docs/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/cogniassist-docs/docs/en/doc2.html">Guides (or other categories)</a><a href="/cogniassist-docs/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/cogniassist-docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/cogniassist-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 Cogniwide</section></footer></div></body></html>
