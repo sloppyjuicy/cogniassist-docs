@@ -10,15 +10,15 @@ This topic explains the steps for creating a conversational flow between a user 
 
 Select **Workflows** <img src="assets\CA_032.png" style="zoom:50%;" />, it directs you to the **Workflows** screen.
 
-<img src="assets\CA_033.png" style="zoom:50%;" />
+![](assets\CA_033.png)
 
 This platform allows you to create a new workflow and modify the existing workflows.
 
 ### Create New Workflow
 
-Click the **+ New Workflow** icon <img src="assets\CA_034.png" style="zoom: 67%;" /> to create a new workflow for your AI bot. The **Add New Workflow** pop-up screen will open for you to define the workflow settings. 
+Click the **+ New Workflow** icon ![](assets\CA_034.png) to create a new workflow for your AI bot. The **Add New Workflow** pop-up screen will open for you to define the workflow settings. 
 
-<img src="assets\CA_036.png" style="zoom:60%;" />
+![](assets\CA_036.png)
 
 Provide the required details in the below field to create a new workflow.
 
@@ -35,7 +35,7 @@ Once you provide the required details, click **Create Workflow**. It creates a n
 
 Click on the required workflow title, it directs you to the workflow builder as shown below.
 
-<img src="assets\CA_037.png" style="zoom: 67%;" />
+![](assets\CA_037.png)
 
 ### Chatbot Actions
 
@@ -63,7 +63,7 @@ Once the AI bot receives the information from the user, it will display an end m
 
 By default, it displays the **start** workflow step. Click on the **start** workflow to begin with the workflow configuration. Once you click **start**, it displays the below pop-up screen.
 
-<img src="assets\CA_038.png" style="zoom: 67%;" />
+![](assets\CA_038.png)
 
 #### Trigger Intents
 
@@ -71,7 +71,7 @@ Adding an intent is the first step to start a workflow. You can fetch the pre-de
 
 If the user query matches the particular intent, it triggers the bot response.  A sample trigger is shown below.
 
-<img src="assets\cw_021.gif" style="zoom: 80%;" />
+![](assets\cw_021.gif)
 
 ***Note*** -  If you want to add a new intent, then select **Utterances** under the **Training** module and add the new intent. After adding the new intent, you can retrieve the same here.
 
@@ -81,7 +81,7 @@ The **start** workflow has a single output port by default. You can connect to t
 
 ### Add new workflow step
 
-Click the **+New Workflow Step** icon <img src="assets\CA_039.png" style="zoom:60%;" /> to add a new workflow step. It displays the below list of options.
+Click the **+New Workflow Step** icon ![](assets\CA_039.png) to add a new workflow step. It displays the below list of options.
 
 1. User Interaction
 2. Logic Step
@@ -94,7 +94,7 @@ Click the **+New Workflow Step** icon <img src="assets\CA_039.png" style="zoom:6
 
 Once the user triggers a particular intent, the bot should provide a relevant response to the user. You can customize the bot responses here. Select **User Interaction** from the list, it displays the screen as shown below. 
 
-<img src="assets\CA_040.png" style="zoom: 67%;" />
+![](assets\CA_040.png)
 
 It displays the user interaction screen with the below options.
 
@@ -105,22 +105,22 @@ It displays the user interaction screen with the below options.
 
 ##### Responses
 
-- To add a bot's response to the user, click the **+Add Response** icon <img src="assets\CA_041.png" style="zoom:60%;" />under **Responses**. It displays the **Responses** tab as shown below. 
+- To add a bot's response to the user, click the **+Add Response** icon ![](assets\CA_041.png)under **Responses**. It displays the **Responses** tab as shown below. 
 
 
-<img src="assets\CA_042.png" style="zoom: 67%;" />
+![](assets\CA_042.png)
 
 - Enter the relevant bot response in the above text box. 
 
 ![](assets\CA_043.png)
 
-- If you want to add multi-line response,  click  the **+Add Response** icon <img src="assets\CA_041.png" style="zoom:60%;" /> to add another response to the user.
+- If you want to add multi-line response,  click  the **+Add Response** icon ![](assets\CA_041.png) to add another response to the user.
 
 ![](assets\cw_022.gif)
 
-Click the **Add** icon <img src="assets\CA_054.png" style="zoom:60%;" />to customize the response. It displays the below options.
+Click the **Add** icon ![](assets\CA_054.png)to customize the response. It displays the below options.
 
-<img src="assets\CA_055.png" style="zoom:60%;" />
+![](assets\CA_055.png)
 
 ###### Buttons
 
@@ -128,7 +128,7 @@ Buttons provide a defined set of options, which enables the user to select the o
 
 Click **Buttons**, it displays the screen as shown below.
 
-<img src="assets\cw_025.gif" style="zoom:50%;" />
+![](assets\cw_025.gif)
 
 
 
@@ -141,9 +141,9 @@ Click **Buttons**, it displays the screen as shown below.
 
 Chatbot offer users, a simple way to reply to a message through quick replies. The user can reply to the bot in just one click, instead of typing it. Quick replies are optional.
 
-- Click the **+** icon <img src="assets\CA_045.png" style="zoom:60%;" /> to add quick replies. 
+- Click the **+** icon ![](D:\Cogniassist\cogniassist-docs\docs\assets\CA_045.png) to add quick replies. 
 
-<img src="assets\CA_048.png" style="zoom:67%;" />
+![](assets\CA_048.png)
 
 ##### Slots
 
@@ -155,13 +155,13 @@ Example, your bot would identify the statement as a #pay_bills intent with a @pa
 
 - To define the slot settings, click the **Slots** tab. It displays the screen as shown below.
 
-<img src="assets\CA_044.png" style="zoom:50%;" />
+![](assets\CA_044.png)
 
 **Slots**
 
-- Click the **+** icon <img src="assets\CA_045.png" style="zoom:67%;" /> to add a slot.
+- Click the **+** icon ![](assets\CA_045.png) to add a slot.
 
-<img src="assets\cw_023.gif" style="zoom:67%;" />
+![](assets\cw_023.gif)
 
 - You can provide the below details to define the slot settings.
 
@@ -177,9 +177,9 @@ Example, your bot would identify the statement as a #pay_bills intent with a @pa
 
 If the user invalidly responds, the bot has to provide a fallback response. 
 
-- Click the **+** icon <img src="assets\CA_045.png" style="zoom:67%;" /> and add a fallback response.
+- Click the **+** icon ![](assets\CA_045.png) and add a fallback response.
 
-<img src="assets\CA_046.png" style="zoom:67%;" />
+![](assets\CA_046.png)
 
 ***Note*** - If you didn't define the fallback response, the bot displays the default fallback message "invalid response".
 
@@ -189,7 +189,7 @@ You can define code related details in this section.
 
 - Click the **Code** tab and it displays the screen as shown below.
 
- <img src="assets\CA_047.png" style="zoom: 50%;" />
+ ![](assets\CA_047.png)
 
 ##### Output Ports
 
@@ -197,7 +197,7 @@ You can connect the output port to an input port of a different node.
 
 - To define the output port settings, click the **Output** tab, it displays the screen as shown below.
 
-<img src="assets\CA_049.png" style="zoom:67%;" />
+![](assets\CA_049.png)
 
 - You should provide the below to define the output settings.
 
@@ -210,19 +210,19 @@ You can connect the output port to an input port of a different node.
 
 You can execute programs and add a logic step after a node using this option. select Logic Step from the list, it displays the screen as shown below.
 
-<img src="assets\CA_051.png" style="zoom:60%;" />
+![](assets\CA_051.png)
 
 #### API Call
 
 You can access the data or functionality of another application from your bot building platform using the API call option. Select **API Call** from the list, it displays the screen as shown below.
 
-<img src="assets\CA_052.png" style="zoom:60%;" />
+![](assets\CA_052.png)
 
 #### Send E-Mail
 
 Select **Send E-mail** from the list, it displays the screen as shown below. You can add an e-mail workflow. When this action is triggered, an email is sent to the recipients with the slot values such as transaction status, date, country name, etc.
 
-<img src="assets\CA_050.png" style="zoom:60%;" />
+![](assets\CA_050.png)
 
 | Option         | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
@@ -240,7 +240,7 @@ Select **Send E-mail** from the list, it displays the screen as shown below. You
 
 *for future purpose*
 
-To end the workflow step, select the **End Step** check box <img src="assets\CA_056.png" style="zoom:60%;" />and save the workflow.
+To end the workflow step, select the **End Step** check box ![](assets\CA_056.png)and save the workflow.
 
 Once you define conversational workflow, click the **Save** icon to save the workflow. You can check the below basic workflow of a bill payment activity.
 

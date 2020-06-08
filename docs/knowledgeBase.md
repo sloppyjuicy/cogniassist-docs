@@ -4,10 +4,10 @@ title: Knowledge Base
 sidebar_label: Knowledge Base
 ---
 
-Knowledge base is an integrated database which contains a collection of information such as products and services. It has an interface engine which enables the user to interact with the system. It also provides higher customer satisfaction by picking the appropriate information for the user.
+Knowledge base is an integrated database which contains a collection of information about the products and services. It has an interface engine which enables the user to interact with the system. It picks the appropriate information for the user thereby providing higher customer satisfaction.
 
 ## Add Knowledge to your Bot
 
-You can build and maintain a knowledge base on your products, FAQs and Small-talk for your Bot in the **Knowledge** module. 
+You can build and maintain knowledge about your products in the **Knowledge** module. Also, FAQs and small talks for your Bot can be stored here.
 
-<img src="assets\CA_007.png" style="zoom:50%;" />
+![](assets\CA_007.png)

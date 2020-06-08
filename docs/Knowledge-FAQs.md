@@ -4,23 +4,23 @@ title: FAQ
 sidebar_label: FAQ
 ---
 
-You can provide higher customer satisfaction by answering some commonly asked questions. Here, you can map the frequently asked questions to each product. This platform allows you to create new FAQs, use preexisting FAQs or import the FAQs by directly uploading .csv files which has the frequently asked question and answers.
-
-***Note*** - 
-
-- FAQs are a combination of products and user intentions. To know about intentions, refer 
+The FAQ section on your website will act as a single point of contact or a go-to destination for your customers. The bot will instantly answer your customer queries before they reach out to your customer support. Here, you can map specific questions with its answers and user intentions to each product. To know about intentions, refer 
 
 [Intents]: https://cogniwide.github.io/cogniassist-docs/blog/2020/05/10/create-good-intents-version-1.0.0
 
-- This helps your bot to answer instantly to your customer queries.
+You can choose any of the following ways to add FAQs to the platform:
 
-Select **FAQs** <img src="assets\CA_019.png" style="zoom:67%;" />under the **Knowledge** module, it directs you to the **FAQ** screen as shown below.  ![](assets\CA_011.png) 
+1. Add new FAQs
+2. Use pre-existing FAQs
+3. Import FAQs by uploading .csv files
+
+Select **FAQs** ![](assets\CA_019.png)under the **Knowledge** module, it directs you to the **FAQ** screen as shown below.  ![](assets\CA_011.png) 
 
 ### Add FAQ
 
-You can use any of the below methods to add FAQs for a product.
+**Add new or select pre-existing FAQ** 
 
-Click the **Upload CSV** icon ![](assets\CA_012.png) and upload the required file with the supported format, enter a new FAQ title or select the preexisting intention from the list and click the **Add** icon ![](assets\CA_00.png)
+Enter a new FAQ title or select the preexisting intention from the list and click the **Add** icon ![](assets\CA_00.png)
 
 ![](assets\cw_0121.gif) 
 
@@ -28,10 +28,18 @@ Click the **Upload CSV** icon ![](assets\CA_012.png) and upload the required fil
 | ------------------ | ------------------------------------------------------------ |
 | Contextual Display | Enter an FAQ title relevant to your product. This field is optional. Example, more options on bill payments. |
 | Language           | Select the language from the list. It lists the primary and secondary languages. |
-| Description        | Describe your product. Example, you can pay your electricity, gas, phone or other bills through digital banking. |
-| Add and Delete     | Click the **Add** icon ![](assets\CA_014.png)to add the FAQ to the product. If you want to delete the existing FAQ, click the **Delete** icon ![](assets\CA_015.png)and proceed further. |
+| Description        | Give a brief description related to the FAQ. Example, this section provides you with commonly asked questions on how to pay various types of bills such as electricity, gas, or phone through digital banking. |
+| Add and Delete     | Click the **Save** icon ![](assets\CA_014.png)to save the FAQ. If you want to delete the existing FAQ, click the **Delete** icon ![](assets\CA_015.png). |
+
+**Upload CSV file**
+
+Click the **Upload CSV** icon ![](assets\CA_012.png) and upload the required file with the supported format.
 
 ***Note*** - 
 
-- You can tag a preexisting FAQ to multiple products.
-- You can differentiate the general FAQs in the bot using the contextual display option.
+- You can tag a pre-existing FAQ to multiple products.
+- You can differentiate the general FAQs for each product using the contextual display option. 
+
+### Update or Delete FAQ
+
+Click the existing product title and modify the required details and click the **Save** icon![](assets\CA_014.png). Click the **Delete** icon ![](assets\CA_015.png)of the respective FAQ and proceed further to delete it.

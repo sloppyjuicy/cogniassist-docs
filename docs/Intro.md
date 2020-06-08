@@ -4,17 +4,29 @@ title: Introduction to Cogniassist
 sidebar_label: Introduction
 ---
 
-# Introduction
+# CongiAssist Conversational AI Platform
 
-Cogniassist is an omnichannel digital assistant platform which has the ability to anticipate a customer's needs and preferences. It connects the customers in a more robust fashion by providing the best customer service possible. It is an integrated development tool that developers and multi-disciplinary teams can use to build bots.
+CogniAssist Conversational AI platform is a digital assistant platform, which is optimized for creating conversational applications such as voice or chat assistants. It offers the flexibility and advanced capabilities to streamline the task of building conversational interfaces. 
 
-# Key Features
+Through an integrated set of tools and services, CogniAssist integrated tool provides a versatile platform where you can design, build, test, deploy, and manage AI bots, all in one place, ensuring that the data sets and training models are locally managed and always remains as the intellectual property of the AI platform. Developers can create bots that understand natural language, handle questions and answers, and more through this modular and extensible framework.
 
-## Language Agnostic NLU pipeline
+## Key Features
 
-## Training Data Augmentation
+The power, flexibility and ease of the CogniAssist platform enables the development of rapid AI chatbots for everyone. Through the below key features, CogniAssist connects the customers in a more robust fashion by providing the best customer service.
 
-## UI Builder
+### Language Agnostic NLU pipeline
 
+CogniAssist provides a powerful contextual AI assistant through its sophisticated NLU engine which makes your bot less bot-like.
 
+- It determines the user needs and captures the key contextual information.
+- selects the next best response or action based on the conversation history.
 
+### Training Data Augmentation
+
+CogniAssist allows you to provide better support to your customers' needs through training data augmentation. 
+
+Training Data Augmentation is nothing but creating new utterances from the existing data, while preserving the meaning that must remain invariant. 
+
+### UI Builder
+
+There are a wide range of rich UI controls in CogniAssist, which helps to guide the conversation between your user and bot.

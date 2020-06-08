@@ -4,7 +4,7 @@ title: Projects
 sidebar_label: Projects
 ---
 
-Once you log on to the Cogniassist platform, it directs you to a project dashboard in which you can create a new bot or look through the existing bot configurations. <img src="assets\CA_001.png" style="zoom:50%;" />
+Once you sign into the Cogniassist platform, it directs you to a project dashboard in which you can create a new bot or look into the existing bot configurations. <img src="assets\CA_001.png" style="zoom:50%;" />
 
 ***Note*** - The existing project displays the current status, deployed date and time and the instance details of the bot.
 
@@ -18,19 +18,19 @@ You can edit or delete the existing project using the settings icon <img src="as
 
 ### Create New Project
 
-Click the **Create New Project** icon <img src="assets/CA_00.png" style="zoom: 67%;" />, a pop-up window will open for you to name your bot, specify its description, language and user settings.
+Click the **Create New Project** icon ![](assets\CA_00.png), a pop-up window will open for you to name your bot, specify its description, language and user settings.
 
 #### Add Languages	
 
 You can select different languages to build a flexible multi-language conversational bot.
 
-<img src="assets/CA_003.gif" style="zoom: 50%;" />
+![](assets\CA_003.gif)
 
 #### Add Users
 
 You can add multiple users to add, edit or view the project details.
 
-<img src="assets/cw_008.gif" style="zoom:50%;" />
+![](assets\cw_008.gif)
 
 ***Note*** - 
 

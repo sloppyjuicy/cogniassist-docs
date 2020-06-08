@@ -9,7 +9,7 @@ Now you have to train your AI bot using utterances, to get the relevant results 
 
 Example, these utterances have the same meaning, "What is the transaction status?" and "show the status of the transaction".
 
-Select **Utterances** <img src="assets\CA_020png.png" style="zoom:67%;" />under the **Training** module, it directs you to the **Intents & Utterances** screen.
+Select **Utterances** ![](assets\CA_020png.png)under the **Training** module, it directs you to the **Intents & Utterances** screen.
 
 ![](assets\CA_021png.png)
 
@@ -23,25 +23,37 @@ To add or search for an intent or utterance, provide the required details in the
 | Intent Type                  | Select the intent type. Example, select **Smalltalk** to add an intent related to small talk. |
 | Search for intents/utterance | Enter the intent name or utterance in the **Search for intents/utterance** field. You can add a new intent or select the existing intent. |
 
-You can use any of the below methods to add an intent and its utterances.
+You can choose any of the below methods to add an intent and its utterances.
 
-Once you enter a new intent name, click the **Add** icon <img src="assets\CA_022png.png" style="zoom:50%;" />, the **Upload CSV** <img src="assets\CA_023png.png" style="zoom: 67%;" />button is visible. You can directly upload the file which has the set of utterances for the respective intents or click the **Tick** icon <img src="assets\CA_024png.png" style="zoom: 67%;" />and add the new intent. 
+1. Add new intent
+2. Use pre-existing Intents and Utterances
+3. Import Intents and Utterances by uploading .csv files
 
-<img src="assets\cw_013.gif" style="zoom: 80%;" />
+**Add new FAQ**
+
+Once you enter a new intent name, click the **Add** icon ![](assets\CA_022png.png), click the **Tick** icon ![](assets\CA_024png.png)and add the new intent. 
+
+![](assets\cw_013.gif)
+
+**Upload CSV file**
+
+Once you enter a new intent name, the **Upload CSV** ![](assets\CA_023png.png)button is visible. You can directly upload the file which has the set of utterances for the respective intents.
 
 ### Add Utterances
 
+As developers build their assistant, one of the major critical tasks is to add training data for all intents they plan to cover. To ensure their assistant can handle real world conversations, they need to anticipate different variations in which their users can express the same intent. The more varied training data we add, the hope is that the NLU models become more robust to incoming user messages. We think it will be helpful to have an interactive data augmentation tool which helps a developer in coming up with these variations to augment their training data with these varied paraphrases.
+
 Once you add a new intent, you can retrieve an extensive library of utterances instead of creating on your own or you can add your own custom utterances.
 
-To retrieve the utterances generated for the user query, click the **Augment Training Data** icon <img src="assets\CA_025png.png" style="zoom:50%;" />. You can select the required utterances from the list as shown below. 
+Enter a sentence and click the **Augment Training Data** icon ![](assets\CA_025png.png) to generate paraphrases. You can select the required ones from the list and add it to the utterances as shown below. 
 
-<img src="assets\cw_014.gif" style="zoom:67%;" />
+![](assets\cw_014.gif)
 
 ### Entity Mapping
 
 You can pick and map custom values from the utterances to the entities. So that, it helps the AI bot to detect the custom values from the user's query.
 
-<img src="assets\cw_017.gif" style="zoom:67%;" />
+![](assets\cw_017.gif)
 
 - To map a keyword from utterance to the entity, select the required keyword and click **Add an entity for “”** button. 
 - Select the relevant entity from the list.
