@@ -135,7 +135,7 @@ Click **Buttons**, it displays the screen as shown below.
 **Payload** - 
 
 - You can provide a button title for the user's convenience. When the user clicks the button, the payload value is processed in the back end. For example, the button title is defined as "**Yes, please**" and the payload value is defined as **yes**. when the user clicks the **"Yes, please"** button, the payload value **yes** is processed in the back end to maintain simple logic process.
-- You can also trigger an intent in the payload field. You have to provide the intent name in the format **/default/intention**. Example, /default/affirm.
+- You can also trigger an intent in the payload field. You have to provide the intent name in the format **/intentionname**. Example, /default/affirm.
 
 **Quick Replies**
 
