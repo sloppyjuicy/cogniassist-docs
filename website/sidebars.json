@@ -4,7 +4,9 @@
     "Knowledge Base": ["knowledge-base","products","faq","smalltalk"],
     "Workflows":["workflow"],
     "Train":["utterances","entities","product-synonyms","re-training"],
-    "Deploy":["settings","deployments","ui-builder","analytics"]
+    "Settings":["settings","settings-channels","settings-live-agent","settings-nlu","settings-ml",
+      "settings-deployments","settings-knowledge-repositories","settings-privacy"],
+    "Deploy":["ui-builder","deployments","analytics"]
 
   }
 }

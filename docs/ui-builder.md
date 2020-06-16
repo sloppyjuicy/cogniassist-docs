@@ -1,7 +1,7 @@
 ---
 id: ui-builder
 title: UI Builder
-sidebar_label: UI Buildey
+sidebar_label: UI Builder
 ---
 
 You can configure the chat widget settings such as the bot appearance and bot avatar in this module. You can have a real-time preview the configured chat widget. Click **UI Builder** ![](assets\CA_85.png), it directs you to the **Chat Widget Builder** screen.
