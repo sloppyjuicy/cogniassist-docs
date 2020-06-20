@@ -4,7 +4,7 @@ title: Channels
 sidebar_label: Channels
 ---
 
-When your AI bot has developed, you'll be deploying it to a broader user community. You will link your AI bot to the external networks such as your own website, Slack, Twilio, Facebook Messenger and more. Here you can view the full list of supported channels. 
+When your AI bot has developed, you'll be deploying it to a broader user community. You will link your AI bot to the external networks such as your own website, Slack, Twilio, Facebook Messenger and more. Each channel has its own salient features. Here you can view the full list of supported channels. 
 
 1. SocketIO
 2. Whatsapp (twilio)

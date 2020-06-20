@@ -12,7 +12,9 @@ Through an integrated set of tools and services, CogniAssist integrated tool pro
 
 ## Key Features
 
-The power, flexibility and ease of the CogniAssist platform enables the development of rapid AI chatbots for everyone. Through the below key features, CogniAssist connects the customers in a more robust fashion by providing the best customer service.
+CogniAssist platform aims to scale business teams and help them maintain a cordial relationship with their clients. This helps businesses cut operational costs, save time and ensure highly profitable productivity as the AI bot handles all basic and tedious requests while the support team takes care of the complex queries.
+
+The power, flexibility and ease of the CogniAssist platform enables the development of rapid AI bots for everyone. Through the below key features, CogniAssist connects the customers in a more robust fashion by providing the best customer service.
 
 ### Language Agnostic NLU pipeline
 
