@@ -4,11 +4,11 @@ title: Workflow
 sidebar_label: Workflow
 ---
 
-A chatbot workflow begins with a welcome message, proceeds to an initial question, presents specific answers, allows the user to respond, extracts the required information, and then displays a message that ends the conversation.
+An AI bot workflow starts with a welcome message, extends to an initial question, presents relevant responses, enables the customers to respond, extracts the required information and then displays a message that ends the conversation.
 
 This topic explains the steps for creating a conversational flow between a user and a bot using the Workflow Builder tool in the CogniAssist bot Builder platform.
 
-Select **Workflows** <img src="assets\CA_032.png" style="zoom:50%;" />, it directs you to the **Workflows** screen.
+Select **Workflows** ![](assets\CA_032.png), it directs you to the **Workflows** screen.
 
 ![](assets\CA_033.png)
 
@@ -92,7 +92,7 @@ Click the **+New Workflow Step** icon ![](assets\CA_039.png) to add a new workfl
 
 #### User Interaction
 
-Once the user triggers a particular intent, the bot should provide a relevant response to the user. You can customize the bot responses here. Select **User Interaction** from the list, it displays the screen as shown below. 
+Once the user triggers a particular intent, the bot should relevantly respond to the user. You can customize the bot responses here. Select **User Interaction** from the list, it displays the screen as shown below. 
 
 ![](assets\CA_040.png)
 
@@ -114,7 +114,7 @@ It displays the user interaction screen with the below options.
 
 ![](assets\CA_043.png)
 
-- If you want to add multi-line response,  click  the **+Add Response** icon ![](assets\CA_041.png) to add another response to the user.
+- If you want to add a multi-line response,  click  the **+Add Response** icon ![](assets\CA_041.png) to add another response to the user.
 
 ![](assets\cw_022.gif)
 
@@ -134,14 +134,14 @@ Click **Buttons**, it displays the screen as shown below.
 
 **Payload** - 
 
-- You can provide a button title for the user's convenience. When the user clicks the button, the payload value is processed in the back end. For example, the button title is defined as "**Yes, please**" and the payload value is defined as **yes**. when the user clicks the **"Yes, please"** button, the payload value **yes** is processed in the back end to maintain simple logic process.
+- You can provide a button title for the user's convenience. When the user clicks the button, the payload value is processed in the back end. For example, the button title is defined as "**Yes, please**" and the payload value is defined as **yes**. When the user clicks the **"Yes, please"** button, the payload value **yes** is processed in the back end to maintain simple logic process.
 - You can also trigger an intent in the payload field. You have to provide the intent name in the format **/intentionname**. Example, /default/affirm.
 
 **Quick Replies**
 
 Chatbot offer users, a simple way to reply to a message through quick replies. The user can reply to the bot in just one click, instead of typing it. Quick replies are optional.
 
-- Click the **+** icon ![](D:\Cogniassist\cogniassist-docs\docs\assets\CA_045.png) to add quick replies. 
+- Click the **+** icon ![](assets\CA_045.png) to add quick replies. 
 
 ![](assets\CA_048.png)
 
@@ -151,7 +151,7 @@ Slots are the variables which enable your AI bot to categorize and interpret the
 
 Ultimately, slots let your bot to find the appropriate matching answers to your user’s intent and relevantly responds.
 
-Example, your bot would identify the statement as a #pay_bills intent with a @payment_type slot and a “credit card” value. From there, your bot can proceed with the credit card payment and then provides a relevant response to the user.
+Example, your bot would identify the statement as a #pay_bills intent with a @payment_type slot and a “credit card” value. From there, your bot can proceed with the credit card payment and then relevantly responds to the user.
 
 - To define the slot settings, click the **Slots** tab. It displays the screen as shown below.
 
@@ -220,14 +220,14 @@ You can access the data or functionality of another application from your bot bu
 
 #### Send E-Mail
 
-Select **Send E-mail** from the list, it displays the screen as shown below. You can add an e-mail workflow. When this action is triggered, an email is sent to the recipients with the slot values such as transaction status, date, country name, etc.
+Select **Send E-mail** from the list. It displays the screen as shown below. You can add an e-mail workflow. When this action is triggered, an email is sent to the recipients with the slot values such as transaction status, date, country name, etc.
 
 ![](assets\CA_050.png)
 
 | Option         | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | recepients (,) | Enter the recipients email ID. Each email ID should be separated by a comma. |
-| Subject        | Enter the subject. Example, transaction status               |
+| Subject        | Enter the subject. Example, transaction status.              |
 | email body     | Enter the information which is useful to the user. Example, Name, country, etc. |
 
 ***Note*** - You can retrieve the slot values using the below format **{slot_values}**. Type a slot name inside the braces {} to retrieve its value. Example, {country}. It will automatically retrieve the country name of the user in the email body.
@@ -242,7 +242,7 @@ Select **Send E-mail** from the list, it displays the screen as shown below. You
 
 To end the workflow step, select the **End Step** check box ![](assets\CA_056.png)and save the workflow.
 
-Once you define conversational workflow, click the **Save** icon to save the workflow. You can check the below basic workflow of a bill payment activity.
+Once you define conversational workflow, click the **Save** icon ![](assets\CA_98.png)to save the workflow. You can check the below basic workflow of a bill payment activity.
 
 ![](assets\CA_053.png)
 

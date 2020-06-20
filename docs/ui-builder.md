@@ -4,7 +4,7 @@ title: UI Builder
 sidebar_label: UI Builder
 ---
 
-You can configure the chat widget settings such as the bot appearance and bot avatar in this module. You can have a real-time preview the configured chat widget. Click **UI Builder** ![](assets\CA_85.png), it directs you to the **Chat Widget Builder** screen.
+You can configure the chat widget settings such as the bot appearance and bot avatar in this module. You can have a real-time preview of the configured chat widget. Click **UI Builder** ![](assets\CA_85.png), it directs you to the **Chat Widget Builder** screen.
 
 ![](assets\CA_86.png)
 
@@ -26,13 +26,13 @@ Once you select an instance, you will be directed to the **Design** screen autom
 | ------------------ | ------------------------------------------------------------ |
 | Bot Name           | Enter the AI bot's name.                                     |
 | Bot Message        | Enter a welcome message. Example, Hey there, I'm here to assist you with any doubts you might have. |
-| Bot Avatar         | Enter the Base64 code of the image or proivde the URL of the image. |
-| Launcher Icon      | Enter the Base64 code of the image or proivde the URL of the image. |
-| Header Logo        | Enter the Base64 code of the image or proivde the URL of the image. By default, it displays the Cogniwide logo. |
-| Choose Header Type | Choose the header type. Example, Banner or Carousal. Choose **Banner**, if you want to display a single image, else choose **Carousal** to display mulitple images. |
-| Banner URL         | Enter the Base64 code of the image or proivde the URL of the image. This field is displayed, if you choose the header type as **Banner**. |
+| Bot Avatar         | Enter the Base64 code of the image or provide the URL of the image. |
+| Launcher Icon      | Enter the Base64 code of the image or provide the URL of the image. |
+| Header Logo        | Enter the Base64 code of the image or provide the URL of the image. By default, it displays the Cogniwide logo. |
+| Choose Header Type | Choose the header type. Example, Banner or Carousal. Choose **Banner**, if you want to display a single image, else choose **Carousal** to display multiple images. |
+| Banner URL         | Enter the Base64 code of the image or provide the URL of the image. This field is displayed, if you choose the header type as **Banner**. |
 | Banner Text        | Enter the intention name, if you want to trigger an intention when the user clicks the banner image. Example, /getquotation. This field is displayed, if you choose the header type as **Banner**. |
-| URL                | Enter the Base64 code of the image or proivde the URL of the image. This field is displayed, if you choose the header type as **Carousal**. |
+| URL                | Enter the Base64 code of the image or provide the URL of the image. This field is displayed, if you choose the header type as **Carousal**. |
 | Text               | Enter the intention name, if you want to trigger an intention when the user clicks the carousal image. Example, /getquotation. This field is displayed, if you choose the header type as **Carousal**. |
 
 ![](assets\CA_88.png)
@@ -62,7 +62,7 @@ Once you design your chat widget, click **Publish**, the below code is generated
 
 ![](assets\CA_95.png)
 
-Click the **Copy** icon ![](assets\CA_96.png)to copy the code snippet and add it in your respective HTML code. Once you paste the code snippet, the chat wideget will be enabled in your website. A sample screen is shown below.
+Click the **Copy** icon ![](assets\CA_96.png)to copy the code snippet and add it in your respective HTML code. Once you paste the code snippet, the chat widget will be enabled on your website. A sample screen is shown below.
 
 ![](assets\CA_97png.png)
 

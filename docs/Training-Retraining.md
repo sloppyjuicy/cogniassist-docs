@@ -11,3 +11,4 @@ Select **Re-Training**  under the **Training** module, it directs you to the **R
 ![](assets\cw_019.gif)
 
 Once you map a failed query with the relevant intent, click **Validate**. This will train the bot on the failed query. If you find that the query is irrelevant to your domain, you can click **Skip** to ignore the failed query. Example, what is the weather today or what is the latest news today.
+

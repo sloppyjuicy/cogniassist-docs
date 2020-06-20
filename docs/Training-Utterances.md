@@ -51,7 +51,7 @@ Enter a sentence and click the **Augment Training Data** icon ![](assets\CA_025p
 
 ### Entity Mapping
 
-You can pick and map custom values from the utterances to the entities. So that, it helps the AI bot to detect the custom values from the user's query.
+You can pick and map custom values from the utterances to the entities. So that it helps the AI bot to detect the custom values from the user's query.
 
 ![](assets\cw_017.gif)
 

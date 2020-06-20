@@ -4,7 +4,7 @@ title: NLU Pipeline
 sidebar_label: NLU Pipeline
 ---
 
-NLU pipeline helps you to classify intent, retrieve responses and extract entities. For example, taking a sentence like "I want to perform a electricity bill payment using credit card" and NLU pipeline classifies this sentence as
+NLU pipeline helps you to classify intent, retrieve responses and extract entities. For example, taking a sentence like "I want to perform an electricity bill payment using credit card" and NLU pipeline classifies this sentence as,
 
 1. intent - bill payment
 2. entities

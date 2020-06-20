@@ -4,7 +4,7 @@ title: Introduction to Cogniassist
 sidebar_label: Introduction
 ---
 
-# CongiAssist Conversational AI Platform
+# CogniAssist Conversational AI Platform
 
 CogniAssist Conversational AI platform is a digital assistant platform, which is optimized for creating conversational applications such as voice or chat assistants. It offers the flexibility and advanced capabilities to streamline the task of building conversational interfaces. 
 
@@ -16,7 +16,7 @@ The power, flexibility and ease of the CogniAssist platform enables the developm
 
 ### Language Agnostic NLU pipeline
 
-CogniAssist provides a powerful contextual AI assistant through its sophisticated NLU engine which makes your bot less bot-like.
+CogniAssist provides a powerful contextual AI assistant through its sophisticated NLU engine, which makes your bot less bot-like.
 
 - It determines the user needs and captures the key contextual information.
 - selects the next best response or action based on the conversation history.

@@ -14,13 +14,13 @@ When your AI bot has developed, you'll be deploying it to a broader user communi
 6. Google Hangout	
 7. Microsoft Bot Framework
 
-By default, the REST channel is enabled which supports one way communication. Example, one to one conversation with the bot. 
+By default, the REST channel is enabled which supports one way of communication. Example, one-to-one conversation with the bot. 
 
 The REST channel will provide you with a REST endpoint which posts messages and sends back the bots messages in response to that request.
 
 #### SocketIO
 
-The SocketIO channel uses websockets and it is real-time. 
+The SocketIO channel uses web sockets, and it is real-time. 
 
 ![](assets\CA_112.png)
 
@@ -28,14 +28,14 @@ Provide the following details and enable the channel.
 
 | Option           | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
-| bot_message-evt  | It defines the event name used by CogniAssist while sending messages over socket.io. |
-| user_message_evt | It defines the event name used by CogniAssist while receiving messages over socket.io. |
+| bot_message-evt  | It defines the event name used by CogniAssist while sending messages over SocketIO. |
+| user_message_evt | It defines the event name used by CogniAssist while receiving messages over SocketIO. |
 
 Enter the required details and click the toggle icon ![](assets\CA_107.png)to enable the channel.
 
 #### Whatsapp (twilio)
 
-The Twilio connector can be used to deploy your AI bot that is easily accessible over a text message. To do so, you have to have a whatsapp business profile.
+The Twilio connector can be used to deploy your AI bot that is easily accessible over a text message. To do so, you have to have a WhatsApp business profile.
 
 ![](assets\CA_113.png)
 
@@ -51,7 +51,7 @@ Enter the required details and click the toggle icon ![](assets\CA_107.png)to en
 
 #### Facebook
 
-You can deploy your AI bot in the Facebook page. To do so, first you need to set up a facebook page.
+You can deploy your AI bot on the Facebook page. To do so, first you need to set up a Facebook page.
 
 ![](assets\CA_114.png)
 

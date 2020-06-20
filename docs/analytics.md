@@ -4,17 +4,18 @@ title: Analytics
 sidebar_label: Analytics
 ---
 
-Chatbot analytics can offer useful insight into the chatbot development and optimization strategies by allowing the chatbot builders to get into the customers' minds. The Key Performance Indicators differ depending on the chatbot 's use case and user requirements. Based on the analytics, you can take practical measures to enhance or fine-tune the business processes.
+Chatbot analytics can offer useful insight into the chatbot development and optimization strategies by allowing the chatbot builders to get into the customers' minds. The Key Performance Indicators differ depending on the chatbot's use case and user requirements. Based on the analytics, you can take practical measures to enhance or fine-tune the business processes.
 
-Once you open a project, it directs you to the **Analytics** screen as shown below, where it displays an overview of the various performance metrics of your AI bot. You can also select **Overview** ![](assets\CA_060.png)under **Analytics** to view the performance of the AI bot. 
+Once you open a project, it directs you to the **Analytics** screen as shown below, where it displays an overview of the various performance metrics of your AI bot. You can also select **Overview** 
+![](assets\CA_060.png) under **Analytics** to view the performance of the AI bot. 
 
 ![](assets\CA_059.png)
 
 CogniAssist features a highly impressive dashboard with an array of four panels of analytics reports: Chat Analytics report, Channel Usage report, Top 5 Intents report, Top 5 Product report.
 
-***Note*** - CogniAssist also provides customized analytics reports. Please contact the support team to generate customized reports based on your business requirements.
+***Note*** - CogniAssist also provide customized analytics reports. Please contact the support team to generate customized reports based on your business requirements.
 
-Select the date range to explore the different types of metrics available for tracking and analysing the AI bot's performance. Click the **Calendar** icon ![](assets\CA_062.png) and select the date range. Example, Apr 19, 2020 - Apr 30, 2020. 
+Select the date range to explore the different types of metrics available for tracking and analyzing the AI bot's performance. Click the **Calendar** icon ![](assets\CA_062.png) and select the date range. Example, Apr 19, 2020 - Apr 30, 2020. 
 
 ## Chat Analytics 	
 
@@ -26,7 +27,7 @@ Select the date range to explore the different types of metrics available for tr
 
 ![](assets\CA_063.png)
 
-- **Total Agent Handovers** - This graph displays the total number of agent handovers taken place within the selected date range. Example, There will be times when a conversation needs to be handed out to a human being.
+- **Total Agent Handovers** - This graph displays the total number of agent handovers taken place within the selected date range. Example, there will be times when a conversation needs to be handed out to a human being.
 
 ![](assets\CA_064.png)
 
@@ -42,38 +43,38 @@ Click the **Settings** icon ![](assets\CA_067.png), it displays the below two op
 
 ![](assets\CA_068.png)
 
-It displays the chat history of the bot with all the users. Click on a user name or ID, it displays their respective chat history on the right side. You can also filter users based on a chat key word. Example, if you type "hello" in the **Search by Chat** field, it displays the users based on the key word "hello". 
+It displays the chat history of the bot with all the users. Click on a username or ID, it displays their respective chat history on the right side. You can also filter users based on a chat key word. Example, if you type "hello" in the **Search by Chat** field, it displays the users based on the keyword "hello". 
 
 ***Note*** - 
 
 - Each user will have an unique ID. Example, 4c842465-f5ac-cf91-aa35-56dbc7de7e8e.
-- If a user provides his/her name during the conversation, the bot replaces the random user ID with the user name. 
+- If a user provides his/her name during the conversation, the bot replaces the random user ID with the username. 
 
 Navigate to different pages using the below navigation tool bar.
 
 ![](assets\CA_069.png)
 
-Once you click on a user name, it displays the chat history as shown below.
+Once you click on a username, it displays the chat history as shown below.
 
 ![](assets\CA_070.png)
 
 - **Check real-time conversation**
 
-  Click **Watch** ![](D:\Cogniassist\cogniassist-docs\docs\assets\CA_072.png)to turn on the LIVE option as shown below, it allows you to check the real-time conversation 	of the bot with the user.
+  Click **Watch** ![](assets\CA_072.png)to turn on the LIVE option as shown below. It allows you to check the real-time conversation 	of the bot with the user.
 
   ![](assets\cw_026.gif)
 
 - **Assign Agent**
 
-  Click **Assign Agent**![](D:\Cogniassist\cogniassist-docs\docs\assets\CA_073.png) , to hand over the conversation to a human agent. Few examples are given below.
+  Click **Assign Agent**![](assets\CA_073.png) , to hand over the conversation to a human agent. Few examples are given below.
 
   1. The user asks to hand over the conversation to a human agent.
   2. The AI bot is struggling to understand the user's query.
-  3. The AI bot understands what the user wants, but a human agent is required to resolve the issue.
+  3. The AI bot understands what the user wants, but it requires a human agent to resolve the issue.
 
 - **Current Sentiment**
 
-  Bot understands the user's emotions through their voice or text inputs. Sentiment analysis enables the AI bot to provide the correct responses to the user.  Click **Current Sentiment** ![](D:\Cogniassist\cogniassist-docs\docs\assets\CA_074.png)to view the real-time emotion behind a customer's message. Example, positive ![](assets\CA_075.png).
+  Bot understands the user's emotions through their voice or text inputs. Sentiment analysis enables the AI bot to provide the correct responses to the user.  Click **Current Sentiment** ![](assets\CA_074.png)to view the real-time emotion behind a customer's message. Example, positive ![](assets\CA_075.png).
 
   Click **Explain** for the respective user query to know more details as shown below.
 
@@ -83,7 +84,7 @@ Once you click on a user name, it displays the chat history as shown below.
 
 ![](assets\CA_76.png)
 
-For detailed information, refer the **Retraining** section.
+For detailed information, refer to the **Retraining** section.
 
 ### ACTIVITY
 
@@ -97,7 +98,7 @@ You can view the monthly activity graph in the **Activity** ![](assets\CA_77.png
 
 ![](assets\CA_79.png)
 
-***Note*** - The chat words with bigger size indicates that the respective chat word is used frequently. 
+***Note*** - The larger chat words indicate that the respective chat word is used frequently and vice versa.
 
 ## CHANNEL USAGE (%) 
 

@@ -21,7 +21,7 @@ Enter an entity name and click **Add** as shown below.
 You can define synonyms for a specific entity so that the bot knows that the synonym in the user query and the entity name are basically the same thing.
 
 - Intents help your AI bot to understand what the user wants to do.
-- Entities represent the information relevant to the user’s intent. Entities help the bot to extract useful information from an utterance relevant to the user’s intent.
+- Entities represent the information relevant to the user’s intent. Entities help the bot extract useful information from an utterance relevant to the user’s intent.
 
 ### Add Synonyms
 

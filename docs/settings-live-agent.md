@@ -12,7 +12,7 @@ Click the **Live Agent** option from the left side menu of the screen. It displa
 
 **Freshchat**
 
-Based on your business requirements, you can use the live agent third party tools.
+Based on your business requirements, you can use the live agent third-party tools.
 
 Provide the following details and enable the live agent settings.
 

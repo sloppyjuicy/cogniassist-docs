@@ -17,7 +17,7 @@ Select **Smalltalk** ![](assets\CA_017.png)under the **Knowledge** module, it di
 You can choose any of the below methods to add small talks:
 
 1. Add new small talk
-2. Use pre-existing samll talk
+2. Use pre-existing small talk
 3. Import small talk by uploading .csv files
 
 **Add new or select pre-existing small talk** 
@@ -29,7 +29,7 @@ Provide the required details as shown below.
 ***Note*** - 
 
 - You can add multi-line responses.
-- It is preferred to add five responses for an intent but you have the option to add over five responses as well.
+- It is preferred to add five responses for an intent, but you have the option to add over five responses as well.
 
 **Upload CSV file**
 
