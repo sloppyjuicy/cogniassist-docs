@@ -82,9 +82,12 @@ CogniAssist lets you extract user-bot conversations from the Platform for archiv
 can be extracted from MongoDB and exported into your business records system using SMTP or XML/JSON file-based
 integrations.
 
-#### eDiscovery
-CogniAssist provides a Platform that facilitates compliance with federal regulations for HIPAA, PCI, FINRA, and others. The Enterprise Admin Console lets you perform eDiscovery searches for user and bot content, across all deployments, usually for
-civil or government investigations. Evidence surfaced by these searches can be retained for any specified duration. Administrators can also provide secure custodian access to on-hold content for internal or external inquiries.
+#### Explainable AI
+Our Explainable AI feature lets humans understand the path an IT system took to make a decision.
+
+<!-- #### Log Discovery
+CogniAssist provides a Platform that facilitates compliance with federal regulations for HIPAA, PCI, FINRA, and others. The Enterprise Admin Console lets you perform searches for user and bot content, across all deployments, usually for
+civil or government investigations. Evidence surfaced by these searches can be retained for any specified duration. Administrators can also provide secure custodian access to on-hold content for internal or external inquiries. -->
 
 #### Profanity Filters
 The Platform supports integration with third-party services that provide profanity filters; user utterances can be sent to the
@@ -92,13 +95,9 @@ third-party service to be tagged and filtered in real-time (if supported). Cogni
 profanities.
 
 #### Audit Logs
-CogniAssist’s Platform provides full auditing capabilities of all system events, such as eDiscovery searches performed and error
-messages, and user-generated events, such as the addition of a new managed user. Each logged event provides detailed
+CogniAssist’s Platform provides full auditing capabilities of all system events. Each logged event provides detailed
 information such as date and time stamp of event, category, description, user that initiated the event (when applicable), and
-the IP address of the device or channel used to access the bot. The Enterprise Admin Console also lets you create and filter
-custom reports by event category, time period, and more.
-
-
+the IP address of the device or channel used to access the bot.
 
 ### Security Protocols & Compliance Reporting
 
@@ -112,6 +111,6 @@ certifications, including ISO2001, PCI, and SOC.
 * Please visit https://aws.amazon.com/compliance/ for more information on AWS environment.
 * Please visit https://docs.microsoft.com/en-us/azure/compliance/ for more information on Azure environment.
 
-
+<!-- 
 #### Service Organization Control Report (SOC)
-CogniAssist is SOC2 Type 1 compliant. A report of our most recent audit can be shared on request by support@cogniassist.com.
+CogniAssist is SOC2 Type 1 compliant. A report of our most recent audit can be shared on request by support@cogniassist.com. -->
