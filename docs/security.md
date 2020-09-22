@@ -7,7 +7,7 @@ sidebar_label: Security & Compliance
 CogniAssist follows the strictest guidelines for security and compliance regardless of industry. From personally identifiable customer information to proprietary business data, our Platform allows you to meet strict requirements passed down from local,
 state, and federal regulatory and governing bodies.
 This section describes the security and compliance methods CogniAssist uses to protect your data in accordance with the highest industry standards. It also describes the features, contained within the Enterprise Admin Console, to take advantage of
-built-in data retention policies such as eDiscovery, audit logging, and more.
+built-in data retention policies such as Chat logs, audit logging, and more.
 
 
 ### Encryption 
