@@ -9,6 +9,17 @@ state, and federal regulatory and governing bodies.
 This section describes the security and compliance methods CogniAssist uses to protect your data in accordance with the highest industry standards. It also describes the features, contained within the Enterprise Admin Console, to take advantage of
 built-in data retention policies such as Chat logs, audit logging, and more.
 
+### Secure Coding using DevSecOps Framework
+
+CogniAssist follows DevSecOps practises to enable enhanced automation throughout the software delivery pipeline to eliminate coding mistakes and ultimately reduce security breaches. The various techniques and key components of DevSecOps practises adopted in CogniAssist product development are mentioned below.
+
+* Static Application Security Testing (SAST) scans the application source files, accurately identifies the root cause and helps remediate the underlying security flaws.
+
+* Dynamic Application Security Testing (DAST) simulates controlled attacks on a running web application or service to identify exploitable vulnerabilities in a running environment.
+
+* Software Composition Analysis (SCA) automates the visibility into open source software (OSS) for the purpose of risk management, security and license compliance. 
+
+During CogniAssist product development, DevSecOps tools and processes help to integrate security into the DevOps framework to release secure and vulnerable free software. Developers test code for security and detect security flaws as code is written and at various stages of development to ensure secure code is released to production.
 
 ### Encryption 
 
@@ -21,8 +32,11 @@ Platform uses HTTPS over Transit Layer Security (TLS) using AES 256 standard.
 #### Encryption Key Management
 
 CogniAssist uses two sets of keys – a master key and enterprise data keys. Each enterprise is assigned a data key. Enterprise
-specific data keys are kept encrypted using the master key. The master key is provisioned and stored using HSM backed
-Key Management Service. Enterprise data keys are rotated periodically or on demand.
+specific data keys are kept encrypted using the master key. 
+
+<!-- The master key is provisioned and stored using HSM backed
+Key Management Service. Enterprise data keys are rotated periodically or on demand. -->
+
 Enterprise administrators can manage data keys from the Admin Console. The administrator also can view the key meta information and rotate the key on demand if required. The newly generated data key will be used to encrypt the data from that
 point of time onwards. 
 
@@ -62,13 +76,12 @@ not used. The Platform includes support for dual-factor authentication. Administ
 * Policy applies to existing users or only new users
 
 
-### Domain Verification
+<!-- ### Domain Verification
 For additional security, the Platform requires that you verify your domain and register your CogniAssist account to your domain
 before bots can be used. CogniAssist provides a unique .TXT record to add to your domain settings or <meta> tag for your web
 site home page. These tokens let you initiate a domain verification check in the Bots Admin console. After verification, the
 Platform provides detailed information related to your domain, such as verification method used, date, and any associated
-comments. 
-
+comments.  -->
 
 
 ### Compliance
@@ -105,7 +118,7 @@ the IP address of the device or channel used to access the bot.
 CogniAssist servers are regularly scanned for vulnerably and monitored by intrusion detection and file integrity agents. We combine exhaustive internal security practices with third-party penetration audits, run on a periodic basis, to ensure data integrity and security and that industry best practices are consistently followed.
 
 #### Data Center
-CogniAssist’s services can be hosted in leading cloud environments such as Azure,AWS. These environments maintains multiple compliance
+CogniAssist’s services are hosted in leading cloud environments such as Azure and AWS. These environments maintains multiple compliance
 certifications, including ISO2001, PCI, and SOC. 
 
 * Please visit https://aws.amazon.com/compliance/ for more information on AWS environment.
