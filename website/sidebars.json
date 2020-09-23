@@ -7,7 +7,7 @@
     "Settings":["settings","settings-channels","settings-live-agent","settings-nlu","settings-ml",
       "settings-deployments","settings-knowledge-repositories","settings-privacy"],
     "Deploy":["ui-builder","deployments","analytics"],
-    "Security":["security"]
+    "Security":["security","devsecops"]
 
   }
 }
