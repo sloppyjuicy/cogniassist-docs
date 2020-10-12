@@ -31,169 +31,65 @@ The expression grammar supports a number of operations including basic arithmeti
 ### Supported Operations
 The following table outlines all operators that can be used in Rule Engine expressions.
 
-**Arithmetic Operators**
 
-Operation, Description, Compatible Data Types
 
-`+`
+**Arithmetic Operators**   
+| Operation | Description                  | Compatible Data Types                  |
+| ----------| ---------------------------- | -------------------------------------- |
+| ``+``     | Addition                     | :py:attr:`~DataType.FLOAT`     |
+| ``-``     | Subtraction                  | :py:attr:`~DataType.FLOAT`     |
+| ``*``     | Multiplication               | :py:attr:`~DataType.FLOAT`     |
+| ``**``    | Exponent                     | :py:attr:`~DataType.FLOAT`     |
+| ``/``     | True division                | :py:attr:`~DataType.FLOAT`     |
+| ``//``    | Floor division               | :py:attr:`~DataType.FLOAT`     |
+| ``%``     | Modulo                       | :py:attr:`~DataType.FLOAT`     |
+
+
+**Bitwise-Arithmetic Operators**      
+| Operation | Description                  | Compatible Data Types                  |
+| ----------| ---------------------------- | -------------------------------------- |
+| ``&``     | Bitwise-and :sup:`1`         | :py:attr:`~DataType.FLOAT`     |
+| ``|``     | Bitwise-or :sup:`1`          | :py:attr:`~DataType.FLOAT`     |
+| ``^``     | Bitwise-xor :sup:`1`         | :py:attr:`~DataType.FLOAT`     |
+| ``>>``    | Bitwise right shift :sup:`1` | :py:attr:`~DataType.FLOAT`     |
+| ``<<``    | Bitwise left shift :sup:`1`  | :py:attr:`~DataType.FLOAT`     |
+
+
+**Comparison Operators**      
+| Operation | Description                  | Compatible Data Types                  |
+| ----------| ---------------------------- | -------------------------------------- |
+| ``==``    | Equal to                     | *ANY*                          |
+| ``!=``    | Not equal to                 | *ANY*                          |
+
+
+**Arithmetic-Comparison Operators**       
+| Operation | Description                  | Compatible Data Types                  |
+| ----------| ---------------------------- | -------------------------------------- |                                
+| ``>``     | Greater than                 | *ANY* :sup:`2`                 |
+| ``>=``    | Greater than or equal to     | *ANY* :sup:`2`                 |
+| ``<``     | Less than                    | *ANY* :sup:`2`                 |
+| ``<=``    | Less than or equal to        | *ANY* :sup:`2`                 |
+
+
+ **Fuzzy-Comparison Operators**                                            
+| Operation | Description                  | Compatible Data Types                  |
+| ----------| ---------------------------- | -------------------------------------- |
+| ``=~``    | Regex match :sup:`3`         | :py:attr:`~DataType.NULL`,     |
+|           |                              | :py:attr:`~DataType.STRING`    |
+| ``=~~``   | Regex search :sup:`3`        | :py:attr:`~DataType.NULL`,     |
+|           |                              | :py:attr:`~DataType.STRING`    |
+| ``!~``    | Regex match fails :sup:`3`   | :py:attr:`~DataType.NULL`,     |
+|           |                              | :py:attr:`~DataType.STRING`    |
+| ``!~~``   | Regex search fails :sup:`3`  | :py:attr:`~DataType.NULL`,     |
+|           |                              | :py:attr:`~DataType.STRING`    |
+
+**Logical Operators**                                                     
+| Operation | Description                  | Compatible Data Types                  |
+| ----------| ---------------------------- | -------------------------------------- |
+| ``and``   | Logical and                  | *ANY*                          |
+| ``not``   | Logical not                  | *ANY*                          |
+| ``or``    | Logical or                   | *ANY*                          |
 
-Addition
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`-`
-
-Subtraction
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`*`
-
-Multiplication
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`**`
-
-Exponent
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`/`
-
-True division
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`//`
-
-Floor division
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`%`
-
-Modulo
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-**Bitwise-Arithmetic Operators**
-
-`&`
-
-Bitwise-and 1
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`|`
-
-Bitwise-or 1
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`^`
-
-Bitwise-xor 1
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`>>`
-
-Bitwise right shift 1
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-`<<`
-
-Bitwise left shift 1
-
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")
-
-**Comparison Operators**
-
-`==`
-
-Equal to
-
-_ANY_
-
-`!=`
-
-Not equal to
-
-_ANY_
-
-**Arithmetic-Comparison Operators**
-
-`>`
-
-Greater than
-
-_ANY_ 2
-
-`>=`
-
-Greater than or equal to
-
-_ANY_ 2
-
-`<`
-
-Less than
-
-_ANY_ 2
-
-`<=`
-
-Less than or equal to
-
-_ANY_ 2
-
-**Fuzzy-Comparison Operators**
-
-`=~`
-
-Regex match 3
-
-[`NULL`](rule_engine/ast.html#rule_engine.ast.DataType.NULL "rule_engine.ast.DataType.NULL"), [`STRING`](rule_engine/ast.html#rule_engine.ast.DataType.STRING "rule_engine.ast.DataType.STRING")
-
-`=~~`
-
-Regex search 3
-
-[`NULL`](rule_engine/ast.html#rule_engine.ast.DataType.NULL "rule_engine.ast.DataType.NULL"), [`STRING`](rule_engine/ast.html#rule_engine.ast.DataType.STRING "rule_engine.ast.DataType.STRING")
-
-`!~`
-
-Regex match fails 3
-
-[`NULL`](rule_engine/ast.html#rule_engine.ast.DataType.NULL "rule_engine.ast.DataType.NULL"), [`STRING`](rule_engine/ast.html#rule_engine.ast.DataType.STRING "rule_engine.ast.DataType.STRING")
-
-`!~~`
-
-Regex search fails 3
-
-[`NULL`](rule_engine/ast.html#rule_engine.ast.DataType.NULL "rule_engine.ast.DataType.NULL"), [`STRING`](rule_engine/ast.html#rule_engine.ast.DataType.STRING "rule_engine.ast.DataType.STRING")
-
-**Logical Operators**
-
-`and`
-
-Logical and
-
-_ANY_
-
-`not`
-
-Logical not
-
-_ANY_
-
-`or`
-
-Logical or
-
-_ANY_
 
 1 Bitwise operations support floating point values, but if the value is not a natural number, an [`EvaluationError`](rule_engine/errors.html#rule_engine.errors.EvaluationError "rule_engine.errors.EvaluationError") will be raised.
 
