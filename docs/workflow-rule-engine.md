@@ -101,51 +101,34 @@ The following table outlines all operators that can be used in Rule Engine expre
 
 The following keywords are reserved and can not be used as the names of symbols.
 
-  
+| Keyword   | Description                                  |
+| --------- | -------------------------------------------- |
+| ``null``  | The NullExpression literal value |
 
-Keyword, Description
+ **Booleans** (BooleanExpression Literals)    
+| Keyword   | Description                                  |
+| --------- | -------------------------------------------- |
+| ``true``  | The "True" boolean value                     |
+| ``false`` | The "False" boolean value                    |
 
-`null`
+ **Floats** (FloatExpression Literals)        
+| Keyword   | Description                                  |
+| --------- | -------------------------------------------- |
+| ``inf``   | Floating point value for infinity            |
+| ``nan``   | Floating point value for not-a-number        |
 
-The [`NullExpression`](rule_engine/ast.html#rule_engine.ast.NullExpression "rule_engine.ast.NullExpression") literal value
+ **Logical Operators**                                    
+| Keyword   | Description                                  |
+| --------- | -------------------------------------------- |
+| ``and``   | Logical "and" operator                       |
+| ``not``   | Logical "not" operator                       |
+| ``or``    | Logical "or" operator                        |
 
-**Booleans** ([`BooleanExpression`](rule_engine/ast.html#rule_engine.ast.BooleanExpression "rule_engine.ast.BooleanExpression") Literals)
+**Membership Operators**                                 
+| Keyword   | Description                                  |
+| --------- | -------------------------------------------- |
+| ``in``    | Checks member is in the container            |
 
-`true`
-
-The “True” boolean value
-
-`false`
-
-The “False” boolean value
-
-**Floats** ([`FloatExpression`](rule_engine/ast.html#rule_engine.ast.FloatExpression "rule_engine.ast.FloatExpression") Literals)
-
-`inf`
-
-Floating point value for infinity
-
-`nan`
-
-Floating point value for not-a-number
-
-**Logical Operators**
-
-`and`
-
-Logical “and” operator
-
-`not`
-
-Logical “not” operator
-
-`or`
-
-Logical “or” operator
-
-**Membership Operators**
-
-`in`
 
 Checks member is in the container
 
