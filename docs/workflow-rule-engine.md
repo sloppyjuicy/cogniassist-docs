@@ -4,19 +4,23 @@ Branching Rule Syntax
 The syntax for creating rules is based off of logical expressions evaluating to either True (matching) or False (non- matching). Rules support a small set of data types which can be defined as constants or resolved using the Python object on which the rule is being applied.
 
   
-### Rule Engine Data Type, Compatible Python Types
 
-[`ARRAY`](rule_engine/ast.html#rule_engine.ast.DataType.ARRAY "rule_engine.ast.DataType.ARRAY"), [`list`](https://docs.python.org/3.7/library/stdtypes.html#list "(in Python v3.7)"), [`tuple`](https://docs.python.org/3.7/library/stdtypes.html#tuple "(in Python v3.7)")
 
-[`BOOLEAN`](rule_engine/ast.html#rule_engine.ast.DataType.BOOLEAN "rule_engine.ast.DataType.BOOLEAN"),[`bool`](https://docs.python.org/3.7/library/functions.html#bool "(in Python v3.7)")
+| Rule Engine Data Type             | Compatible Python Types                                                  |
+| --------------------------------- | ------------------------------------------------------------------------ |
 
-[`DATETIME`](rule_engine/ast.html#rule_engine.ast.DataType.DATETIME "rule_engine.ast.DataType.DATETIME"), [`datetime.date`](https://docs.python.org/3.7/library/datetime.html#datetime.date "(in Python v3.7)"), [`datetime.datetime`](https://docs.python.org/3.7/library/datetime.html#datetime.datetime "(in Python v3.7)")
+| [`ARRAY`](rule_engine/ast.html#rule_engine.ast.DataType.ARRAY "rule_engine.ast.DataType.ARRAY") | [`list`](https://docs.python.org/3.7/library/stdtypes.html#list "(in Python v3.7)") [`tuple`](https://docs.python.org/3.7/library/stdtypes.html#tuple "(in Python v3.7)") |
 
-[`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT"), [`int`](https://docs.python.org/3.7/library/functions.html#int "(in Python v3.7)"), [`float`](https://docs.python.org/3.7/library/functions.html#float "(in Python v3.7)")
+| [`BOOLEAN`](rule_engine/ast.html#rule_engine.ast.DataType.BOOLEAN "rule_engine.ast.DataType.BOOLEAN") | [`bool`](https://docs.python.org/3.7/library/functions.html#bool "(in Python v3.7)")|
 
-[`NULL`](rule_engine/ast.html#rule_engine.ast.DataType.NULL "rule_engine.ast.DataType.NULL"), `NoneType`
+| [`DATETIME`](rule_engine/ast.html#rule_engine.ast.DataType.DATETIME "rule_engine.ast.DataType.DATETIME")| [`datetime.date`](https://docs.python.org/3.7/library/datetime.html#datetime.date "(in Python v3.7)"), [`datetime.datetime`](https://docs.python.org/3.7/library/datetime.html#datetime.datetime "(in Python v3.7)") |
 
-[`STRING`](rule_engine/ast.html#rule_engine.ast.DataType.STRING "rule_engine.ast.DataType.STRING"),[`str`](https://docs.python.org/3.7/library/stdtypes.html#str "(in Python v3.7)")
+| [`FLOAT`](rule_engine/ast.html#rule_engine.ast.DataType.FLOAT "rule_engine.ast.DataType.FLOAT")| [`int`](https://docs.python.org/3.7/library/functions.html#int "(in Python v3.7)"), [`float`](https://docs.python.org/3.7/library/functions.html#float "(in Python v3.7)") |
+
+| [`NULL`](rule_engine/ast.html#rule_engine.ast.DataType.NULL "rule_engine.ast.DataType.NULL")| `NoneType`|
+
+| [`STRING`](rule_engine/ast.html#rule_engine.ast.DataType.STRING "rule_engine.ast.DataType.STRING")| [`str`](https://docs.python.org/3.7/library/stdtypes.html#str "(in Python v3.7)")|
+
 
 
 Not all supported operations work with all data types as noted in the table below. Rules follow a standard [order of operations](https://en.wikipedia.org/wiki/Order_of_operations#Programming_languages).
