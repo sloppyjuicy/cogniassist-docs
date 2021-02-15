@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>workflow-rule-engine · Cogniassist Help Center</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Branching Rule Syntax"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="workflow-rule-engine · Cogniassist Help Center"/><meta property="og:type" content="website"/><meta property="og:url" content="https://cogniwide.github.io/cogniassist-docs/"/><meta property="og:description" content="Branching Rule Syntax"/><meta property="og:image" content="https://cogniwide.github.io/cogniassist-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://cogniwide.github.io/cogniassist-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/cogniassist-docs/img/fav-icon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://cogniwide.github.io/cogniassist-docs/blog/atom.xml" title="Cogniassist Help Center Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://cogniwide.github.io/cogniassist-docs/blog/feed.xml" title="Cogniassist Help Center Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/cogniassist-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/cogniassist-docs/css/main.css"/><script src="/cogniassist-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/cogniassist-docs/"><img class="logo" src="/cogniassist-docs/img/fav-icon.png" alt="Cogniassist Help Center"/><h2 class="headerTitleWithLogo">Cogniassist Help Center</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/cogniassist-docs/docs/introduction-to-cogniassist" target="_self">Docs</a></li><li class=""><a href="/cogniassist-docs/help" target="_self">Help</a></li><li class=""><a href="/cogniassist-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">workflow-rule-engine</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="branching-rule-syntax"></a><a href="#branching-rule-syntax" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Branching Rule Syntax</h1>
+<p>The syntax for creating rules is based off of logical expressions evaluating to either True (matching) or False (non- matching). Rules support a small set of data types which can be defined as constants or resolved using the Python object on which the rule is being applied.</p>
+<table>
+<thead>
+<tr><th>Rule Engine Data Type</th><th>Compatible Python Types</th></tr>
+</thead>
+<tbody>
+<tr><td>DataType.ARRAY</td><td>list,</td></tr>
+<tr><td></td><td>tuple</td></tr>
+<tr><td>DataType.BOOLEAN</td><td>bool</td></tr>
+<tr><td>DataType.DATETIME</td><td>datetime.date,</td></tr>
+<tr><td></td><td>datetime.datetime</td></tr>
+<tr><td>DataType.FLOAT</td><td>int,</td></tr>
+<tr><td></td><td>float</td></tr>
+<tr><td>DataType.NULL</td><td>NoneType</td></tr>
+<tr><td>DataType.STRING</td><td>str</td></tr>
+</tbody>
+</table>
+<p>Not all supported operations work with all data types as noted in the table below. Rules follow a standard <a href="https://en.wikipedia.org/wiki/Order_of_operations#Programming_languages">order of operations</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="grammar"></a><a href="#grammar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Grammar</h2>
+<p>The expression grammar supports a number of operations including basic arithmetic for numerical data and regular expressions for strings. Operations are type aware and will raise an exception when an incompatible type is used.</p>
+<h3><a class="anchor" aria-hidden="true" id="supported-operations"></a><a href="#supported-operations" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Supported Operations</h3>
+<p>The following table outlines all operators that can be used in Rule Engine expressions.</p>
+<p><strong>Arithmetic Operators</strong></p>
+<table>
+<thead>
+<tr><th>Operation</th><th>Description</th><th>Compatible Data Types</th></tr>
+</thead>
+<tbody>
+<tr><td><code>+</code></td><td>Addition</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>-</code></td><td>Subtraction</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>*</code></td><td>Multiplication</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>**</code></td><td>Exponent</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>/</code></td><td>True division</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>//</code></td><td>Floor division</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>%</code></td><td>Modulo</td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+</tbody>
+</table>
+<p><strong>Bitwise-Arithmetic Operators</strong></p>
+<table>
+<thead>
+<tr><th>Operation</th><th>Description</th><th>Compatible Data Types</th></tr>
+</thead>
+<tbody>
+<tr><td><code>&amp;</code></td><td>Bitwise-and :sup:<code>1</code></td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td>``</td><td>``</td><td>Bitwise-or :sup:<code>1</code></td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>^</code></td><td>Bitwise-xor :sup:<code>1</code></td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>&gt;&gt;</code></td><td>Bitwise right shift :sup:<code>1</code></td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+<tr><td><code>&lt;&lt;</code></td><td>Bitwise left shift :sup:<code>1</code></td><td>:py:attr:<code>~DataType.FLOAT</code></td></tr>
+</tbody>
+</table>
+<p><strong>Comparison Operators</strong></p>
+<table>
+<thead>
+<tr><th>Operation</th><th>Description</th><th>Compatible Data Types</th></tr>
+</thead>
+<tbody>
+<tr><td><code>==</code></td><td>Equal to</td><td><em>ANY</em></td></tr>
+<tr><td><code>!=</code></td><td>Not equal to</td><td><em>ANY</em></td></tr>
+</tbody>
+</table>
+<p><strong>Arithmetic-Comparison Operators</strong></p>
+<table>
+<thead>
+<tr><th>Operation</th><th>Description</th><th>Compatible Data Types</th></tr>
+</thead>
+<tbody>
+<tr><td><code>&gt;</code></td><td>Greater than</td><td><em>ANY</em> :sup:<code>2</code></td></tr>
+<tr><td><code>&gt;=</code></td><td>Greater than or equal to</td><td><em>ANY</em> :sup:<code>2</code></td></tr>
+<tr><td><code>&lt;</code></td><td>Less than</td><td><em>ANY</em> :sup:<code>2</code></td></tr>
+<tr><td><code>&lt;=</code></td><td>Less than or equal to</td><td><em>ANY</em> :sup:<code>2</code></td></tr>
+</tbody>
+</table>
+<p><strong>Fuzzy-Comparison Operators</strong></p>
+<table>
+<thead>
+<tr><th>Operation</th><th>Description</th><th>Compatible Data Types</th></tr>
+</thead>
+<tbody>
+<tr><td><code>=~</code></td><td>Regex match :sup:<code>3</code></td><td>:py:attr:<code>~DataType.NULL</code>,</td></tr>
+<tr><td></td><td></td><td>:py:attr:<code>~DataType.STRING</code></td></tr>
+<tr><td><code>=~~</code></td><td>Regex search :sup:<code>3</code></td><td>:py:attr:<code>~DataType.NULL</code>,</td></tr>
+<tr><td></td><td></td><td>:py:attr:<code>~DataType.STRING</code></td></tr>
+<tr><td><code>!~</code></td><td>Regex match fails :sup:<code>3</code></td><td>:py:attr:<code>~DataType.NULL</code>,</td></tr>
+<tr><td></td><td></td><td>:py:attr:<code>~DataType.STRING</code></td></tr>
+<tr><td><code>!~~</code></td><td>Regex search fails :sup:<code>3</code></td><td>:py:attr:<code>~DataType.NULL</code>,</td></tr>
+<tr><td></td><td></td><td>:py:attr:<code>~DataType.STRING</code></td></tr>
+</tbody>
+</table>
+<p><strong>Logical Operators</strong></p>
+<table>
+<thead>
+<tr><th>Operation</th><th>Description</th><th>Compatible Data Types</th></tr>
+</thead>
+<tbody>
+<tr><td><code>and</code></td><td>Logical and</td><td><em>ANY</em></td></tr>
+<tr><td><code>not</code></td><td>Logical not</td><td><em>ANY</em></td></tr>
+<tr><td><code>or</code></td><td>Logical or</td><td><em>ANY</em></td></tr>
+</tbody>
+</table>
+<p>1 Bitwise operations support floating point values, but if the value is not a natural number, an <a href="rule_engine/errors.html#rule_engine.errors.EvaluationError" title="rule_engine.errors.EvaluationError"><code>EvaluationError</code></a> will be raised.</p>
+<p>2 The arithmetic comparison operators support multiple data types however the data type of the left value must be the same as the data type of the right. For example, a <a href="rule_engine/ast.html#rule_engine.ast.DataType.STRING" title="rule_engine.ast.DataType.STRING"><code>STRING</code></a> can be compared to another <a href="rule_engine/ast.html#rule_engine.ast.DataType.STRING" title="rule_engine.ast.DataType.STRING"><code>STRING</code></a> but not a <a href="rule_engine/ast.html#rule_engine.ast.DataType.FLOAT" title="rule_engine.ast.DataType.FLOAT"><code>FLOAT</code></a>. The technique is the same lexicographical ordering based sequence comparison <a href="https://docs.python.org/3/tutorial/datastructures.html#comparing-sequences-and-other-types">technique used by Python</a>.</p>
+<p>3 When using regular expression operations, the expression on the left is the string to compare and the expression on the right is the regular expression to use for either the match or search operation.</p>
+<h3><a class="anchor" aria-hidden="true" id="reserved-keywords"></a><a href="#reserved-keywords" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reserved Keywords</h3>
+<p>The following keywords are reserved and can not be used as the names of symbols.</p>
+<table>
+<thead>
+<tr><th>Keyword</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>null</code></td><td>The NullExpression literal value</td></tr>
+</tbody>
+</table>
+<p><strong>Booleans</strong> (BooleanExpression Literals)</p>
+<table>
+<thead>
+<tr><th>Keyword</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>true</code></td><td>The &quot;True&quot; boolean value</td></tr>
+<tr><td><code>false</code></td><td>The &quot;False&quot; boolean value</td></tr>
+</tbody>
+</table>
+<p><strong>Floats</strong> (FloatExpression Literals)</p>
+<table>
+<thead>
+<tr><th>Keyword</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>inf</code></td><td>Floating point value for infinity</td></tr>
+<tr><td><code>nan</code></td><td>Floating point value for not-a-number</td></tr>
+</tbody>
+</table>
+<p><strong>Logical Operators</strong></p>
+<table>
+<thead>
+<tr><th>Keyword</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>and</code></td><td>Logical &quot;and&quot; operator</td></tr>
+<tr><td><code>not</code></td><td>Logical &quot;not&quot; operator</td></tr>
+<tr><td><code>or</code></td><td>Logical &quot;or&quot; operator</td></tr>
+</tbody>
+</table>
+<p><strong>Membership Operators</strong></p>
+<table>
+<thead>
+<tr><th>Keyword</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>in</code></td><td>Checks member is in the container</td></tr>
+</tbody>
+</table>
+<p>Checks member is in the container</p>
+<h3><a class="anchor" aria-hidden="true" id="literal-values"></a><a href="#literal-values" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Literal Values</h3>
+<p><a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a> and <a href="rule_engine/ast.html#rule_engine.ast.DataType.STRING" title="rule_engine.ast.DataType.STRING"><code>STRING</code></a> literal values are specified in a very similar manner by defining the value as a string of characters enclosed in either single or double quotes. The difference comes in an optional leading character before the opening quote. Either no leading character or a single <code>s</code> will specify a standard <a href="rule_engine/ast.html#rule_engine.ast.DataType.STRING" title="rule_engine.ast.DataType.STRING"><code>STRING</code></a> value, while a single <code>d</code> will specify a <a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a> value.</p>
+<p><a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a> literals must be specified in ISO-8601 format. The underlying parsing logic is provided by <a href="https://dateutil.readthedocs.io/en/stable/parser.html#dateutil.parser.isoparse" title="(in dateutil v2.8.1)"><code>dateutil.parser.isoparse()</code></a>. <a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a> values with no time specified (e.g. <code>d&quot;2019-09-23&quot;</code>) will evaluate to a <a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a> of the specified day at exactly midnight.</p>
+<p>Example rules showing equivalent literal expressions:</p>
+<ul>
+<li><p><code>&quot;foobar&quot; == s&quot;foobar&quot;</code></p></li>
+<li><p><code>d&quot;2019-09-23&quot; == d&quot;2019-09-23 00:00:00&quot;</code></p></li>
+</ul>
+<p><a href="rule_engine/ast.html#rule_engine.ast.DataType.FLOAT" title="rule_engine.ast.DataType.FLOAT"><code>FLOAT</code></a> literals may be expressed in either binary, octal, decimal, or hexadecimal formats. The binary, octal and hexadecimal formats use the <code>0b</code>, <code>0o</code>, and <code>0x</code> prefixes respectively. Values in the decimal format require no prefix and is the default base in which values are represented. Only base-10, decimal values may include a decimal place component.</p>
+<p>Example rules showing equivalent literal expressions:</p>
+<ul>
+<li><p><code>0b10 == 2</code></p></li>
+<li><p><code>0o10 == 8</code></p></li>
+<li><p><code>10.0 == 10</code></p></li>
+<li><p><code>0x10 == 16</code></p></li>
+</ul>
+<p><a href="rule_engine/ast.html#rule_engine.ast.DataType.FLOAT" title="rule_engine.ast.DataType.FLOAT"><code>FLOAT</code></a> literals may also be expressed in scientific notation using the letter <code>e</code>.</p>
+<p>Example rules show equivalent literal expressions:</p>
+<ul>
+<li><p><code>1E0 == 1</code></p></li>
+<li><p><code>1e0 == 1</code></p></li>
+<li><p><code>1.0e0 == 1</code></p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="builtin-symbols"></a><a href="#builtin-symbols" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Builtin Symbols</h2>
+<p>The following symbols are provided by default using the <a href="rule_engine/engine.html#rule_engine.engine.Builtins.from_defaults" title="rule_engine.engine.Builtins.from_defaults"><code>from_defaults()</code></a> method. These symbols can be accessed through the <code>$</code> prefix, e.g. <code>$pi</code>. The default values can be overridden by defining a custom subclass of <a href="rule_engine/engine.html#rule_engine.engine.Context" title="rule_engine.engine.Context"><code>Context</code></a> and setting the <a href="rule_engine/engine.html#rule_engine.engine.Context.builtins" title="rule_engine.engine.Context.builtins"><code>builtins</code></a> attribute.</p>
+<h3><a class="anchor" aria-hidden="true" id="math-related"></a><a href="#math-related" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Math Related</h3>
+<ul>
+<li><p><code>e</code> (type: <a href="rule_engine/ast.html#rule_engine.ast.DataType.FLOAT" title="rule_engine.ast.DataType.FLOAT"><code>FLOAT</code></a>) – The mathematical constant <em>e</em> (2.71828…).</p></li>
+<li><p><code>pi</code> (type: <a href="rule_engine/ast.html#rule_engine.ast.DataType.FLOAT" title="rule_engine.ast.DataType.FLOAT"><code>FLOAT</code></a>) – The mathematical constant <em>pi</em> (3.14159…).</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="regular-expression-related"></a><a href="#regular-expression-related" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Regular Expression Related</h3>
+<ul>
+<li><p><code>re_groups</code> (type: <a href="rule_engine/ast.html#rule_engine.ast.DataType.ARRAY" title="rule_engine.ast.DataType.ARRAY"><code>ARRAY</code></a>) – An array of strings from the last regular expression match as defined by the regular expression itself. See documentation on <a href="https://docs.python.org/3/howto/regex.html#grouping">grouping</a> for more information. If no match has taken place, this value is <a href="rule_engine/ast.html#rule_engine.ast.DataType.NULL" title="rule_engine.ast.DataType.NULL"><code>NULL</code></a>.</p>
+<p>Note</p>
+<p>For technical reasons, this symbol is provided by the default <a href="rule_engine/engine.html#rule_engine.engine.Context" title="rule_engine.engine.Context"><code>Context</code></a> and is not included within the <a href="rule_engine/engine.html#rule_engine.engine.Builtins.from_defaults" title="rule_engine.engine.Builtins.from_defaults"><code>from_defaults()</code></a>. This means that unlike the other symbols listed here, it will be unavailable if the default builtins are replaced.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="timestamp-related"></a><a href="#timestamp-related" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Timestamp Related</h3>
+<ul>
+<li><p><code>now</code> (type: <a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a>) – The current timestamp (including time) using the default timezone from <a href="rule_engine/engine.html#rule_engine.engine.Context.default_timezone" title="rule_engine.engine.Context.default_timezone"><code>default_timezone</code></a>.</p></li>
+<li><p><code>today</code> (type: <a href="rule_engine/ast.html#rule_engine.ast.DataType.DATETIME" title="rule_engine.ast.DataType.DATETIME"><code>DATETIME</code></a>) – The current timestamp, (excluding time, normalized to midnight 00:00:00) using the default timezone from <a href="rule_engine/engine.html#rule_engine.engine.Context.default_timezone" title="rule_engine.engine.Context.default_timezone"><code>default_timezone</code></a>.</p></li>
+</ul>
+<hr>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#grammar">Grammar</a><ul class="toc-headings"><li><a href="#supported-operations">Supported Operations</a></li><li><a href="#reserved-keywords">Reserved Keywords</a></li><li><a href="#literal-values">Literal Values</a></li></ul></li><li><a href="#builtin-symbols">Builtin Symbols</a><ul class="toc-headings"><li><a href="#math-related">Math Related</a></li><li><a href="#regular-expression-related">Regular Expression Related</a></li><li><a href="#timestamp-related">Timestamp Related</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/cogniassist-docs/" class="nav-home"><img src="/cogniassist-docs/img/fav-icon.png" alt="Cogniassist Help Center" width="66" height="58"/></a><div><h5>Docs</h5><a href="/cogniassist-docs/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/cogniassist-docs/docs/en/doc2.html">Guides (or other categories)</a><a href="/cogniassist-docs/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/cogniassist-docs/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/cogniassist-docs/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2021 Cogniwide</section></footer></div></body></html>
