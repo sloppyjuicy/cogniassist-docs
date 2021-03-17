@@ -1,5 +1,9 @@
-Branching Rule Syntax
-=========================================================
+---
+id: branching-rule-syntax
+title: Branching Rule Syntax
+sidebar_label: Branching Rule Syntax
+---
+
 
 The syntax for creating rules is based off of logical expressions evaluating to either True (matching) or False (non- matching). Rules support a small set of data types which can be defined as constants or resolved using the Python object on which the rule is being applied.
 
