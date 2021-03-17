@@ -2,7 +2,7 @@
   "docs": {
     "Getting Started": ["introduction-to-cogniassist","login","projects"],
     "Knowledge Base": ["knowledge-base","products","faq","smalltalk"],
-    "Workflows":["workflow","workflow-advanced"],
+    "Workflows":["workflow","workflow-api","workflow-advanced"],
     "Train":["utterances","entities","product-synonyms","re-training"],
     "Settings":["settings","settings-channels","settings-live-agent","settings-nlu","settings-ml",
       "settings-deployments","settings-knowledge-repositories","settings-privacy"],
