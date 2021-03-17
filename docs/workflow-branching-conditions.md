@@ -12,7 +12,7 @@ Let's look at this in detail with a small ***example***.
 The picture below shows a simple workflow using user interaction nodes.
 ![](assets\branching_workflow.png)
 
-Now lets open the user interaction node and set up branching.
+Now lets open the user interaction node and set up branching menu and conditions.
 Here in the below picture you can see buttons and its respective payload.
 
 ![](assets\branching_menu.png)
@@ -21,10 +21,10 @@ Now lets add some simple branching conditions.
 
 ![](assets\branching_condition.png)
 
-here the state changes only if the payload matches the branching conditions.
-Meaning the bot traverses to the first state if the payload **first** matches the **condition text == 'first'**.
+Here the state changes only if the payload matches the branching conditions.
+Meaning the bot traverses to the first state if the payload **pediatric** matches the condition **text == 'pediatric'**.
 
-Now for the third state **text not in ['first','second']** is another way of giving branch conditions. This can also be done as **text != 'first' and text != 'second'** or **simply text == 'third'**.
+Now for the last state **text not in ['pediatric','youth','middle']** is another way of giving branch conditions. This can also be done as **text != 'pediatric' and text != 'youth' and text != 'middle'** or simply **text == 'elderly'**.
 
 
 ![](assets\branching_response.gif)
