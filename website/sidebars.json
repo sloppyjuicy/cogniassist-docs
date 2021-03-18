@@ -2,7 +2,11 @@
   "docs": {
     "Getting Started": ["introduction-to-cogniassist","login","projects"],
     "Knowledge Base": ["knowledge-base","products","faq","smalltalk"],
+<<<<<<< HEAD
     "Workflows":["workflow","workflow-api","branching-conditions","flowjump-node","workflow-advanced","branching-rule-syntax"],
+=======
+    "Workflows":["workflow","workflow-api","branching-conditions","code-editor","workflow-advanced","branching-rule-syntax"],
+>>>>>>> 339a6bd15b0bf2e5d65d0911dc64f62cafd17ee7
     "Train":["utterances","entities","product-synonyms","re-training"],
     "Settings":["settings","settings-channels","settings-live-agent","settings-nlu","settings-ml",
       "settings-deployments","settings-knowledge-repositories","settings-privacy"],
