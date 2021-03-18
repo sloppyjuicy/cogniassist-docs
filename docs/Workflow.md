@@ -87,6 +87,7 @@ Click the **+New Workflow Step** icon ![](assets\CA_039.png) to add a new workfl
 2. Logic Step
 3. API Call
 4. Send E-Mail
+5. Live Agent Transfer
 5. S3 File Upload
 6. REST File Upload
 
@@ -231,6 +232,21 @@ Select **Send E-mail** from the list. It displays the screen as shown below. You
 | email body     | Enter the information which is useful to the user. Example, Name, country, etc. |
 
 ***Note*** - You can retrieve the slot values using the below format **{slot_values}**. Type a slot name inside the braces {} to retrieve its value. Example, {country}. It will automatically retrieve the country name of the user in the email body.
+
+#### Live Agent Transfer
+
+Live agent transfer nodes are used to transfer the flow to a human agent.
+Select the live agent transfer option from the new workflow step dropdown.
+
+![](assets\live_agent_transfer.png)
+
+selecting live agent transfer will open up the live agent transfer node as shown below.
+
+![](assets\live_agent_node.png)
+
+Inside the queue name specify to which live agent section the flow is to be transferred. for example mention the live agent associated with sale if the flow should be transferred to the sales section.
+
+
 
 #### S3 File Upload
 
